@@ -64,25 +64,32 @@ from `Base.csv`; those of the copy used in the study are kept in
 
 ## Software environments
 
-TabPFN v2 and TabPFN-3.5 require incompatible versions of the `tabpfn` package, so two
-environments were used (Section 4.8 of the article):
+TabPFN v2 and TabPFN-3.5 require incompatible versions of the `tabpfn` package, so the
+experiments used two software environments on the same type of machine (Section 4.8 of the
+article):
 
-* **Classical models, TabPFN v2 and analysis** — Python 3.9, `requirements-clasicos-v2.txt`
-  (PyTorch 2.7.1 with CUDA 11.8 on the GPU).
+* **Classical models and TabPFN v2** — Python 3.9, `requirements-clasicos-v2.txt`
+  (PyTorch 2.7.1 with CUDA 11.8).
 * **TabPFN-3.5** — Python 3.13 (the default Python of Colab at the time), `requirements-tabpfn35.txt`.
   Downloading the TabPFN-3.5 weights requires a free Prior Labs account and accepting the
   model license; the notebook reads the token from a Colab secret named `TABPFN_TOKEN`.
 
-All reported results were obtained on Google Colab virtual machines with an NVIDIA
-A100-SXM4 GPU (80 GB) and a 12-core Intel Xeon CPU at 2.20 GHz; the exact package versions of
-each run are in `resultados_colab/entorno_*.json`. The TabPFN models ran on the GPU and the
-classical models on the CPU.
+All models were fitted, scored and timed on Google Colab virtual machines of the same type,
+with an NVIDIA A100-SXM4 GPU (80 GB) and a 12-core Intel Xeon CPU at 2.20 GHz: the TabPFN models
+on the GPU and the classical models on the CPU. The exact package versions of each run are in
+`resultados_colab/entorno_*.json`, and every per-repetition result, including all times, is in
+`resultados_colab/`.
+
+The remaining scripts (`preparar_resultados_finales.py`, `figura_correlacion.py` and
+`generar_tablas_latex.py`) fit no model and measure no time: they only aggregate these results
+into summaries, statistical tests, figures and tables, and they give identical outputs on any
+computer with the first environment (no GPU needed).
 
 ## Reproducing the article
 
 ### Tables and figures from the published runs (minutes, no GPU)
 
-With the classical environment, from the repository root:
+From the repository root, with the first environment:
 
 ```bash
 python preparar_resultados_finales.py   # summary, statistical tests, Figures 2-6
@@ -107,14 +114,10 @@ The first command reads `resultados_colab/` and regenerates every file in
 
 For the classical models, `Base.csv` and the copy used in the study give the same metrics (in a
 check on two training sizes, PR-AUC agreed to six decimals and the confusion matrices were
-identical). TabPFN is more sensitive to the rounding of the copy and to the GPU: on a GPU other
-than the A100, its PR-AUC differed from the published value by up to 0.001, well below its
-standard deviation across repetitions (0.002–0.010). Wall-clock times depend on the hardware
-and on the load of the virtual machine.
-
-`experimento_fraude.py` can also run the whole protocol on a single machine
-(`python experimento_fraude.py --datos data/Base.csv`, with `--prueba-rapida` for a short
-check); the results in the article come from the Colab runs described above.
+identical). TabPFN is sensitive to tiny differences in its input and to the GPU on which it
+runs, so its PR-AUC can differ slightly from the published values; in our checks the
+differences were at most 0.001, below its standard deviation across repetitions
+(0.002–0.010). Wall-clock times depend on the hardware and on the load of the virtual machine.
 
 ## Correspondence between the article and the outputs
 

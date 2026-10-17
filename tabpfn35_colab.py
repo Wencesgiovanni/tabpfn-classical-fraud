@@ -3,7 +3,7 @@
 Usa las particiones exactas exportadas por exportar_para_colab.py (mismas filas de
 entrenamiento, validación y prueba que los demás modelos) y reproduce la limpieza, el
 preprocesamiento y las métricas de experimento_fraude.py. Antes de cada corrida verifica,
-con una huella SHA-256, que la matriz de prueba preprocesada sea idéntica a la original.
+con una huella SHA-256, que la matriz de prueba preprocesada sea idéntica a la de referencia (huellas.json).
 
 Los resultados se guardan fila por fila en <carpeta>/resultados_tabpfn35.csv; si la sesión
 de Colab se corta, al volver a ejecutar el script continúa donde se quedó.
@@ -198,7 +198,7 @@ def main():
         Pt64 = prep.transform(Xt).astype(np.float64)
         h = huella(np.round(Pt64, 5))
         if h != info["huella_prueba"]:
-            sys.exit(f"[{clave}] La matriz de prueba preprocesada NO coincide con la original "
+            sys.exit(f"[{clave}] La matriz de prueba preprocesada NO coincide con la de referencia "
                      f"({h} != {info['huella_prueba']}). No se ejecuta nada más.")
         if args.solo_verificar:
             log(f"[{k}/{len(plan)}] {clave}: datos y preprocesamiento idénticos ({h})")

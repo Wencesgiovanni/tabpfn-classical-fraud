@@ -47,7 +47,7 @@ TAMANOS = ["1000", "2500", "5000", "10000", "completo"]
 
 
 class Args:
-    """Mismos valores de protocolo que el experimento original (configuracion.json)."""
+    """Valores del protocolo del artículo."""
     ensayos = 20
     tabpfn_estimadores = 8
     tabpfn_lote = 5000
@@ -92,7 +92,7 @@ def main():
         f_log.write(linea + "\n")
         f_log.flush()
 
-    # --- Dispositivos: la red Keras en CPU, como en el experimento original
+    # --- Dispositivos (protocolo del artículo): la red Keras en CPU
     if args.grupo in ("principal", "importancia"):
         import tensorflow as tf
         tf.config.set_visible_devices([], "GPU")
@@ -196,7 +196,7 @@ def main():
             h = huella(np.round(Pt64, 5))
             if h != info["huella_prueba"]:
                 sys.exit(f"[{clave}] La matriz de prueba preprocesada NO coincide con la "
-                         f"original ({h} != {info['huella_prueba']}). No se ejecuta nada más.")
+                         f"de referencia ({h} != {info['huella_prueba']}). No se ejecuta nada más.")
             cache = {clave: (prep.transform(Xtr).astype(np.float32), ytr,
                              prep.transform(Xv).astype(np.float32), Pt64.astype(np.float32), h)}
         Ptr, ytr, Pv, Pt, h = cache[clave]
