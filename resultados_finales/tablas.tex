@@ -1,0 +1,226 @@
+% === Generado por generar_tablas_latex.py: no editar a mano ===
+% --- Tabla principal
+\begin{table}[htbp]
+\caption{Test performance with 10{,}000 training rows (a) and with the full undersampled training set (b) (mean $\pm$ 95\% CI over 10 repetitions; 50{,}000 test applications from months 6--7, 702 frauds). Precision and F1 use the threshold fixed on the validation month at 5\% FPR. Rank: average Friedman rank in PR-AUC within each panel (1 = best). Sorted by PR-AUC; best value per column in bold. TabPFN~v2 does not support the full training set.}
+\label{tab:main10k}
+\resizebox{\textwidth}{!}{%
+\begin{tabular*}{\tblwidth}{@{}LLLLLLL@{}}
+\toprule
+Method & PR-AUC & ROC-AUC & Recall@5\%FPR & Precision & F1 & Rank \\
+\midrule
+\multicolumn{7}{l}{\emph{(a) 10{,}000 training rows}} \\
+TabPFN-3.5 & $\mathbf{0.1733 \pm 0.0014}$ & $\mathbf{0.8824 \pm 0.0019}$ & $\mathbf{0.5188 \pm 0.0087}$ & $0.1172 \pm 0.0044$ & $0.1932 \pm 0.0056$ & \textbf{1.0} \\
+TabPFN~v2 & $0.1616 \pm 0.0016$ & $0.8752 \pm 0.0012$ & $0.5102 \pm 0.0079$ & $0.1196 \pm 0.0024$ & $\mathbf{0.1953 \pm 0.0033}$ & 2.1 \\
+XGBoost (tuned) & $0.1550 \pm 0.0049$ & $0.8727 \pm 0.0029$ & $0.4977 \pm 0.0105$ & $0.1121 \pm 0.0046$ & $0.1853 \pm 0.0052$ & 3.8 \\
+Logistic $L_1$ (tuned) & $0.1448 \pm 0.0022$ & $0.8693 \pm 0.0017$ & $0.4821 \pm 0.0080$ & $0.1203 \pm 0.0027$ & $0.1923 \pm 0.0034$ & 6.3 \\
+Linear SVM & $0.1446 \pm 0.0022$ & $0.8710 \pm 0.0012$ & $0.4801 \pm 0.0066$ & $0.1217 \pm 0.0024$ & $0.1935 \pm 0.0031$ & 6.4 \\
+Linear SVM (tuned) & $0.1441 \pm 0.0020$ & $0.8707 \pm 0.0010$ & $0.4746 \pm 0.0070$ & $0.1191 \pm 0.0022$ & $0.1904 \pm 0.0027$ & 7.5 \\
+Logistic $L_1$ & $0.1441 \pm 0.0024$ & $0.8709 \pm 0.0011$ & $0.4822 \pm 0.0075$ & $0.1223 \pm 0.0027$ & $0.1941 \pm 0.0034$ & 8.3 \\
+Random Forest (tuned) & $0.1434 \pm 0.0022$ & $0.8541 \pm 0.0031$ & $0.4684 \pm 0.0080$ & $0.1039 \pm 0.0034$ & $0.1727 \pm 0.0045$ & 8.4 \\
+Ridge (tuned) & $0.1430 \pm 0.0018$ & $0.8665 \pm 0.0012$ & $0.4610 \pm 0.0050$ & $0.1140 \pm 0.0015$ & $0.1834 \pm 0.0020$ & 8.8 \\
+Ridge & $0.1421 \pm 0.0019$ & $0.8663 \pm 0.0012$ & $0.4613 \pm 0.0050$ & $0.1143 \pm 0.0012$ & $0.1839 \pm 0.0016$ & 9.7 \\
+Random Forest & $0.1419 \pm 0.0027$ & $0.8544 \pm 0.0023$ & $0.4675 \pm 0.0052$ & $0.1066 \pm 0.0027$ & $0.1760 \pm 0.0038$ & 9.1 \\
+Keras NN (tuned) & $0.1384 \pm 0.0042$ & $0.8666 \pm 0.0025$ & $0.4634 \pm 0.0063$ & $0.1218 \pm 0.0020$ & $0.1912 \pm 0.0020$ & 11.9 \\
+XGBoost & $0.1369 \pm 0.0066$ & $0.8591 \pm 0.0034$ & $0.4603 \pm 0.0081$ & $0.1063 \pm 0.0058$ & $0.1744 \pm 0.0067$ & 12.2 \\
+MLP (tuned) & $0.1363 \pm 0.0029$ & $0.8651 \pm 0.0033$ & $0.4603 \pm 0.0076$ & $0.1216 \pm 0.0023$ & $0.1901 \pm 0.0019$ & 13.3 \\
+Keras NN & $0.1341 \pm 0.0041$ & $0.8652 \pm 0.0023$ & $0.4604 \pm 0.0074$ & $\mathbf{0.1237 \pm 0.0029}$ & $0.1918 \pm 0.0032$ & 13.9 \\
+MLP & $0.1321 \pm 0.0097$ & $0.8596 \pm 0.0098$ & $0.4516 \pm 0.0236$ & $0.1205 \pm 0.0054$ & $0.1872 \pm 0.0098$ & 13.3 \\
+\midrule
+\multicolumn{7}{l}{\emph{(b) Full undersampled training set, 67{,}400 rows}} \\
+TabPFN-3.5 & $\mathbf{0.1800 \pm 0.0010}$ & $\mathbf{0.8883 \pm 0.0004}$ & $\mathbf{0.5293 \pm 0.0036}$ & $0.1193 \pm 0.0017$ & $0.1967 \pm 0.0022$ & \textbf{1.0} \\
+XGBoost (tuned) & $0.1685 \pm 0.0035$ & $0.8844 \pm 0.0019$ & $0.5170 \pm 0.0070$ & $0.1184 \pm 0.0028$ & $0.1945 \pm 0.0036$ & 2.1 \\
+Random Forest & $0.1579 \pm 0.0028$ & $0.8694 \pm 0.0007$ & $0.4983 \pm 0.0038$ & $0.1118 \pm 0.0011$ & $0.1851 \pm 0.0016$ & 4.9 \\
+MLP (tuned) & $0.1566 \pm 0.0024$ & $0.8769 \pm 0.0013$ & $0.4943 \pm 0.0084$ & $0.1198 \pm 0.0038$ & $0.1939 \pm 0.0049$ & 5.5 \\
+XGBoost & $0.1550 \pm 0.0035$ & $0.8771 \pm 0.0014$ & $0.5021 \pm 0.0050$ & $0.1187 \pm 0.0022$ & $0.1935 \pm 0.0028$ & 5.9 \\
+MLP & $0.1547 \pm 0.0026$ & $0.8764 \pm 0.0016$ & $0.5011 \pm 0.0022$ & $0.1244 \pm 0.0036$ & $0.1994 \pm 0.0037$ & 6.0 \\
+Random Forest (tuned) & $0.1547 \pm 0.0057$ & $0.8659 \pm 0.0047$ & $0.4946 \pm 0.0080$ & $0.1076 \pm 0.0049$ & $0.1795 \pm 0.0067$ & 6.7 \\
+Keras NN & $0.1527 \pm 0.0024$ & $0.8756 \pm 0.0011$ & $0.4940 \pm 0.0059$ & $0.1217 \pm 0.0031$ & $0.1957 \pm 0.0037$ & 7.7 \\
+Keras NN (tuned) & $0.1521 \pm 0.0038$ & $0.8741 \pm 0.0016$ & $0.4925 \pm 0.0055$ & $0.1183 \pm 0.0037$ & $0.1916 \pm 0.0046$ & 7.8 \\
+Logistic $L_1$ (tuned) & $0.1476 \pm 0.0003$ & $0.8731 \pm 0.0016$ & $0.4900 \pm 0.0051$ & $0.1250 \pm 0.0028$ & $0.1985 \pm 0.0031$ & 9.9 \\
+Linear SVM & $0.1475 \pm 0.0004$ & $0.8745 \pm 0.0002$ & $0.4848 \pm 0.0010$ & $0.1236 \pm 0.0007$ & $0.1965 \pm 0.0009$ & 10.7 \\
+Linear SVM (tuned) & $0.1473 \pm 0.0004$ & $0.8744 \pm 0.0002$ & $0.4852 \pm 0.0010$ & $0.1236 \pm 0.0007$ & $0.1967 \pm 0.0009$ & 11.2 \\
+Logistic $L_1$ & $0.1471 \pm 0.0003$ & $0.8745 \pm 0.0002$ & $0.4912 \pm 0.0042$ & $\mathbf{0.1264 \pm 0.0007}$ & $\mathbf{0.2002 \pm 0.0010}$ & 12.2 \\
+Ridge (tuned) & $0.1447 \pm 0.0002$ & $0.8688 \pm 0.0002$ & $0.4621 \pm 0.0022$ & $0.1152 \pm 0.0005$ & $0.1846 \pm 0.0007$ & 13.7 \\
+Ridge & $0.1445 \pm 0.0002$ & $0.8689 \pm 0.0002$ & $0.4628 \pm 0.0021$ & $0.1153 \pm 0.0004$ & $0.1849 \pm 0.0007$ & 14.7 \\
+\bottomrule
+\end{tabular*}%
+}
+\end{table}
+
+% --- Curva de aprendizaje
+\begin{table}[htbp]
+\centering
+\caption{Learning curve in PR-AUC (mean $\pm$ 95\% CI over 10 repetitions). For each training size: both TabPFN versions, the best classical model in each variant, and the paired comparison of each TabPFN version with tuned XGBoost: number of repetitions in which TabPFN obtained the higher PR-AUC and, in parentheses, the Holm-adjusted $p$-value of the two-sided Wilcoxon signed-rank test (Section~\ref{sec:stats}).}
+\label{tab:learning}
+\footnotesize
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{r c c l l c c}
+\toprule
+ & & & & & \multicolumn{2}{c}{vs.\ tuned XGBoost: wins (Holm $p$)} \\
+\cmidrule(lr){6-7}
+Rows & TabPFN-3.5 & TabPFN~v2 & Best tuned classical & Best default classical & TabPFN-3.5 & TabPFN~v2 \\
+\midrule
+1{,}000 & $0.1378 \pm 0.0060$ & $0.1305 \pm 0.0075$ & Logistic $L_1$: $0.1215 \pm 0.0056$ & Logistic $L_1$: $0.1146 \pm 0.0072$ & 10/10 (0.029) & 9/10 (0.031) \\
+2{,}500 & $0.1581 \pm 0.0045$ & $0.1489 \pm 0.0028$ & Logistic $L_1$: $0.1374 \pm 0.0042$ & Logistic $L_1$: $0.1344 \pm 0.0060$ & 10/10 (0.029) & 10/10 (0.029) \\
+5{,}000 & $0.1679 \pm 0.0030$ & $0.1553 \pm 0.0030$ & XGBoost: $0.1485 \pm 0.0056$ & Logistic $L_1$: $0.1405 \pm 0.0024$ & 10/10 (0.029) & 8/10 (0.037) \\
+10{,}000 & $0.1733 \pm 0.0014$ & $0.1616 \pm 0.0016$ & XGBoost: $0.1550 \pm 0.0049$ & Linear SVM: $0.1446 \pm 0.0022$ & 10/10 (0.029) & 9/10 (0.029) \\
+67{,}400 & $0.1800 \pm 0.0010$ & --- (exceeds limit) & XGBoost: $0.1685 \pm 0.0035$ & Random Forest: $0.1579 \pm 0.0028$ & 10/10 (0.027) & --- \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}
+
+% --- Matrices de confusión
+\begin{table}[htbp]
+\caption{Confusion matrices on the test set (50{,}000 applications from months 6--7: 702 frauds and 49{,}298 legitimate applications) at the threshold fixed on the validation month at 5\% FPR. Counts are means over 10 repetitions, rounded. TP: frauds detected; FN: frauds missed; FP: legitimate applications flagged (false alarms); TN: legitimate applications not flagged. FPR, recall, and precision are averaged per repetition, so they may differ slightly from ratios of the rounded mean counts. Methods are sorted by PR-AUC within each panel.}
+\label{tab:confusion}
+\begin{tabular*}{\tblwidth}{@{}LLLLLLLL@{}}
+\toprule
+Method & TP & FN & FP & TN & FPR (\%) & Recall & Precision \\
+\midrule
+\multicolumn{8}{l}{\emph{(a) 10{,}000 training rows}} \\
+TabPFN-3.5 & 388 & 314 & 2{,}931 & 46{,}367 & 5.9 & 0.552 & 0.117 \\
+TabPFN~v2 & 374 & 328 & 2{,}759 & 46{,}539 & 5.6 & 0.533 & 0.120 \\
+XGBoost (tuned) & 377 & 325 & 3{,}004 & 46{,}294 & 6.1 & 0.537 & 0.112 \\
+Logistic $L_1$ (tuned) & 337 & 365 & 2{,}467 & 46{,}831 & 5.0 & 0.480 & 0.120 \\
+Linear SVM & 332 & 370 & 2{,}401 & 46{,}897 & 4.9 & 0.473 & 0.122 \\
+Linear SVM (tuned) & 334 & 368 & 2{,}471 & 46{,}827 & 5.0 & 0.475 & 0.119 \\
+Logistic $L_1$ & 330 & 372 & 2{,}373 & 46{,}925 & 4.8 & 0.471 & 0.122 \\
+Random Forest (tuned) & 360 & 342 & 3{,}116 & 46{,}182 & 6.3 & 0.513 & 0.104 \\
+Ridge (tuned) & 329 & 373 & 2{,}554 & 46{,}744 & 5.2 & 0.468 & 0.114 \\
+Ridge & 330 & 372 & 2{,}553 & 46{,}745 & 5.2 & 0.469 & 0.114 \\
+Random Forest & 355 & 347 & 2{,}982 & 46{,}316 & 6.0 & 0.506 & 0.107 \\
+Keras NN (tuned) & 313 & 389 & 2{,}256 & 47{,}042 & 4.6 & 0.445 & 0.122 \\
+XGBoost & 346 & 356 & 2{,}945 & 46{,}353 & 6.0 & 0.493 & 0.106 \\
+MLP (tuned) & 307 & 395 & 2{,}219 & 47{,}079 & 4.5 & 0.437 & 0.122 \\
+Keras NN & 300 & 402 & 2{,}127 & 47{,}171 & 4.3 & 0.427 & 0.124 \\
+MLP & 296 & 406 & 2{,}152 & 47{,}146 & 4.4 & 0.421 & 0.121 \\
+\midrule
+\multicolumn{8}{l}{\emph{(b) Full undersampled training set, 67{,}400 rows (TabPFN~v2 not supported)}} \\
+TabPFN-3.5 & 394 & 308 & 2{,}908 & 46{,}390 & 5.9 & 0.561 & 0.119 \\
+XGBoost (tuned) & 383 & 319 & 2{,}853 & 46{,}445 & 5.8 & 0.545 & 0.118 \\
+Random Forest & 377 & 325 & 2{,}996 & 46{,}302 & 6.1 & 0.537 & 0.112 \\
+MLP (tuned) & 357 & 345 & 2{,}631 & 46{,}667 & 5.3 & 0.509 & 0.120 \\
+XGBoost & 368 & 334 & 2{,}732 & 46{,}566 & 5.5 & 0.524 & 0.119 \\
+MLP & 354 & 348 & 2{,}499 & 46{,}799 & 5.1 & 0.504 & 0.124 \\
+Random Forest (tuned) & 382 & 320 & 3{,}188 & 46{,}110 & 6.5 & 0.545 & 0.108 \\
+Keras NN & 352 & 350 & 2{,}545 & 46{,}753 & 5.2 & 0.501 & 0.122 \\
+Keras NN (tuned) & 354 & 348 & 2{,}648 & 46{,}650 & 5.4 & 0.505 & 0.118 \\
+Logistic $L_1$ (tuned) & 340 & 362 & 2{,}381 & 46{,}917 & 4.8 & 0.484 & 0.125 \\
+Linear SVM & 337 & 365 & 2{,}388 & 46{,}910 & 4.8 & 0.480 & 0.124 \\
+Linear SVM (tuned) & 338 & 364 & 2{,}393 & 46{,}905 & 4.9 & 0.481 & 0.124 \\
+Logistic $L_1$ & 337 & 365 & 2{,}328 & 46{,}970 & 4.7 & 0.480 & 0.126 \\
+Ridge (tuned) & 327 & 375 & 2{,}510 & 46{,}788 & 5.1 & 0.465 & 0.115 \\
+Ridge & 327 & 375 & 2{,}510 & 46{,}788 & 5.1 & 0.466 & 0.115 \\
+\bottomrule
+\end{tabular*}
+\end{table}
+
+% --- Costo
+\begin{table}[htbp]
+\centering
+\caption{Wall-clock cost in seconds (mean over 10 repetitions) on the same machine (NVIDIA A100 GPU; Section~\ref{sec:hardware}): fit time of the default variant, total time of the 20-configuration random search (tuned variant), and inference time for 50{,}000 test applications. TabPFN models on the GPU; all other models on the CPU.}
+\label{tab:cost}
+\footnotesize
+\begin{tabular*}{\tblwidth}{@{}LLLLLLL@{}}
+\toprule
+ & \multicolumn{3}{c}{10{,}000 training rows} & \multicolumn{3}{c}{67{,}400 training rows} \\
+\cmidrule(lr){2-4}\cmidrule(lr){5-7}
+Model & Fit & Search & Inference & Fit & Search & Inference \\
+\midrule
+TabPFN-3.5 & 0.71 & --- & 39.5 & 2.24 & --- & 386.6 \\
+TabPFN~v2 & 1.51 & --- & 60.7 & \multicolumn{3}{c}{not supported} \\
+Linear SVM & 0.15 & 2.76 & 0.01 & 1.03 & 18.5 & 0.01 \\
+Logistic $L_1$ & 2.14 & 37.0 & 0.01 & 42.1 & 379.3 & 0.01 \\
+Ridge & 0.01 & 0.37 & $<$0.01 & 0.04 & 1.78 & $<$0.01 \\
+Random Forest & 0.35 & 25.1 & 0.08 & 2.06 & 171.9 & 0.10 \\
+XGBoost & 0.46 & 12.1 & 0.07 & 1.13 & 36.3 & 0.06 \\
+MLP & 0.91 & 33.4 & 0.01 & 6.93 & 229.1 & 0.01 \\
+Keras NN & 1.34 & 39.4 & 0.07 & 4.34 & 149.4 & 0.07 \\
+\bottomrule
+\end{tabular*}
+\end{table}
+
+% --- Apéndice 1000
+\begin{table}[htbp]
+\caption{Confusion matrices on the test set with 1{,}000 training rows (means over 10 repetitions). TP: frauds detected; FN: frauds missed; FP: legitimate applications flagged; TN: legitimate applications not flagged.}
+\label{tab:conf1000}
+\begin{tabular*}{\tblwidth}{@{}LLLLLLLL@{}}
+\toprule
+Method & TP & FN & FP & TN & FPR (\%) & Recall & Precision \\
+\midrule
+TabPFN-3.5 & 334 & 368 & 2{,}768 & 46{,}530 & 5.6 & 0.476 & 0.108 \\
+TabPFN~v2 & 328 & 374 & 2{,}787 & 46{,}511 & 5.7 & 0.467 & 0.106 \\
+Logistic $L_1$ (tuned) & 292 & 410 & 2{,}447 & 46{,}851 & 5.0 & 0.417 & 0.108 \\
+Ridge (tuned) & 308 & 394 & 2{,}572 & 46{,}726 & 5.2 & 0.439 & 0.107 \\
+Linear SVM (tuned) & 304 & 398 & 2{,}585 & 46{,}713 & 5.2 & 0.433 & 0.106 \\
+Logistic $L_1$ & 285 & 417 & 2{,}428 & 46{,}870 & 4.9 & 0.406 & 0.106 \\
+Ridge & 301 & 401 & 2{,}558 & 46{,}740 & 5.2 & 0.429 & 0.106 \\
+Random Forest & 310 & 392 & 3{,}011 & 46{,}287 & 6.1 & 0.441 & 0.094 \\
+Random Forest (tuned) & 311 & 391 & 3{,}076 & 46{,}222 & 6.2 & 0.443 & 0.093 \\
+XGBoost (tuned) & 298 & 404 & 2{,}714 & 46{,}584 & 5.5 & 0.424 & 0.099 \\
+Linear SVM & 282 & 420 & 2{,}424 & 46{,}874 & 4.9 & 0.402 & 0.105 \\
+Keras NN (tuned) & 242 & 460 & 1{,}944 & 47{,}354 & 3.9 & 0.345 & 0.111 \\
+MLP (tuned) & 244 & 458 & 2{,}023 & 47{,}275 & 4.1 & 0.347 & 0.108 \\
+XGBoost & 269 & 433 & 2{,}735 & 46{,}563 & 5.5 & 0.383 & 0.091 \\
+Keras NN & 143 & 559 & 1{,}742 & 47{,}556 & 3.5 & 0.204 & 0.075 \\
+MLP & 126 & 576 & 1{,}995 & 47{,}303 & 4.0 & 0.179 & 0.056 \\
+\bottomrule
+\end{tabular*}
+\end{table}
+
+% --- Apéndice 2500
+\begin{table}[htbp]
+\caption{Confusion matrices on the test set with 2{,}500 training rows (means over 10 repetitions). TP: frauds detected; FN: frauds missed; FP: legitimate applications flagged; TN: legitimate applications not flagged.}
+\label{tab:conf2500}
+\begin{tabular*}{\tblwidth}{@{}LLLLLLLL@{}}
+\toprule
+Method & TP & FN & FP & TN & FPR (\%) & Recall & Precision \\
+\midrule
+TabPFN-3.5 & 360 & 342 & 2{,}653 & 46{,}645 & 5.4 & 0.513 & 0.120 \\
+TabPFN~v2 & 355 & 347 & 2{,}642 & 46{,}656 & 5.4 & 0.505 & 0.118 \\
+Logistic $L_1$ (tuned) & 323 & 379 & 2{,}502 & 46{,}796 & 5.1 & 0.460 & 0.115 \\
+Ridge (tuned) & 322 & 380 & 2{,}520 & 46{,}778 & 5.1 & 0.458 & 0.113 \\
+Linear SVM (tuned) & 321 & 381 & 2{,}495 & 46{,}803 & 5.1 & 0.457 & 0.114 \\
+Logistic $L_1$ & 317 & 385 & 2{,}379 & 46{,}919 & 4.8 & 0.451 & 0.118 \\
+XGBoost (tuned) & 343 & 359 & 2{,}739 & 46{,}559 & 5.6 & 0.488 & 0.112 \\
+Ridge & 322 & 380 & 2{,}536 & 46{,}762 & 5.1 & 0.459 & 0.113 \\
+Linear SVM & 316 & 386 & 2{,}391 & 46{,}907 & 4.8 & 0.450 & 0.117 \\
+Random Forest & 334 & 368 & 2{,}978 & 46{,}320 & 6.0 & 0.475 & 0.101 \\
+Random Forest (tuned) & 337 & 365 & 3{,}140 & 46{,}158 & 6.4 & 0.479 & 0.097 \\
+MLP (tuned) & 278 & 424 & 2{,}062 & 47{,}236 & 4.2 & 0.396 & 0.119 \\
+Keras NN (tuned) & 268 & 434 & 1{,}958 & 47{,}340 & 4.0 & 0.382 & 0.121 \\
+XGBoost & 308 & 394 & 2{,}731 & 46{,}567 & 5.5 & 0.439 & 0.102 \\
+Keras NN & 247 & 455 & 1{,}936 & 47{,}362 & 3.9 & 0.352 & 0.113 \\
+MLP & 239 & 463 & 1{,}992 & 47{,}306 & 4.0 & 0.341 & 0.107 \\
+\bottomrule
+\end{tabular*}
+\end{table}
+
+% --- Apéndice 5000
+\begin{table}[htbp]
+\caption{Confusion matrices on the test set with 5{,}000 training rows (means over 10 repetitions). TP: frauds detected; FN: frauds missed; FP: legitimate applications flagged; TN: legitimate applications not flagged.}
+\label{tab:conf5000}
+\begin{tabular*}{\tblwidth}{@{}LLLLLLLL@{}}
+\toprule
+Method & TP & FN & FP & TN & FPR (\%) & Recall & Precision \\
+\midrule
+TabPFN-3.5 & 372 & 330 & 2{,}676 & 46{,}622 & 5.4 & 0.529 & 0.122 \\
+TabPFN~v2 & 360 & 342 & 2{,}640 & 46{,}658 & 5.4 & 0.514 & 0.120 \\
+XGBoost (tuned) & 360 & 342 & 2{,}808 & 46{,}490 & 5.7 & 0.513 & 0.114 \\
+Logistic $L_1$ (tuned) & 336 & 366 & 2{,}459 & 46{,}839 & 5.0 & 0.478 & 0.120 \\
+Linear SVM (tuned) & 332 & 370 & 2{,}461 & 46{,}837 & 5.0 & 0.473 & 0.119 \\
+Ridge (tuned) & 329 & 373 & 2{,}530 & 46{,}768 & 5.1 & 0.469 & 0.115 \\
+Logistic $L_1$ & 326 & 376 & 2{,}357 & 46{,}941 & 4.8 & 0.465 & 0.122 \\
+Linear SVM & 329 & 373 & 2{,}382 & 46{,}916 & 4.8 & 0.468 & 0.121 \\
+Ridge & 330 & 372 & 2{,}528 & 46{,}770 & 5.1 & 0.470 & 0.115 \\
+Random Forest (tuned) & 349 & 353 & 3{,}029 & 46{,}269 & 6.1 & 0.497 & 0.104 \\
+Random Forest & 339 & 363 & 2{,}890 & 46{,}408 & 5.9 & 0.482 & 0.105 \\
+MLP (tuned) & 293 & 409 & 2{,}113 & 47{,}185 & 4.3 & 0.418 & 0.122 \\
+Keras NN (tuned) & 289 & 413 & 2{,}085 & 47{,}213 & 4.2 & 0.411 & 0.122 \\
+XGBoost & 328 & 374 & 2{,}723 & 46{,}575 & 5.5 & 0.467 & 0.108 \\
+Keras NN & 277 & 425 & 1{,}983 & 47{,}315 & 4.0 & 0.394 & 0.123 \\
+MLP & 271 & 431 & 2{,}097 & 47{,}201 & 4.3 & 0.386 & 0.114 \\
+\bottomrule
+\end{tabular*}
+\end{table}

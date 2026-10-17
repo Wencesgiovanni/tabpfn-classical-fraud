@@ -1,0 +1,17 @@
+{
+  "grupo": "principal",
+  "python": "3.9.25 (main, Oct 31 2025, 23:00:23) \n[Clang 21.1.4 ]",
+  "plataforma": "Linux-6.6.122+-x86_64-with-glibc2.39",
+  "cpu": "Intel(R) Xeon(R) CPU @ 2.20GHz",
+  "nucleos_logicos": 12,
+  "gpu": "NVIDIA A100-SXM4-80GB",
+  "memoria_gpu_gb": 85.1,
+  "tabpfn": "2.1.3",
+  "torch": "2.7.1+cu118",
+  "scikit-learn": "1.6.1",
+  "xgboost": "2.1.4",
+  "tensorflow": "2.11.0",
+  "numpy": "1.24.4",
+  "pandas": "2.3.1",
+  "scipy": "1.13.1"
+}

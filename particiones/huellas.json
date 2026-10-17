@@ -1,0 +1,388 @@
+{
+ "n_val": 20000,
+ "n_test": 50000,
+ "fraudes_prueba": 702,
+ "columnas_predictoras": [
+  "income",
+  "name_email_similarity",
+  "prev_address_months_count",
+  "current_address_months_count",
+  "customer_age",
+  "days_since_request",
+  "intended_balcon_amount",
+  "payment_type",
+  "zip_count_4w",
+  "velocity_6h",
+  "velocity_24h",
+  "velocity_4w",
+  "1nk_branch_count_8w",
+  "date_of_birth_distinct_emails_4w",
+  "employment_status",
+  "credit_risk_score",
+  "email_is_free",
+  "housing_status",
+  "phone_home_valid",
+  "phone_mobile_valid",
+  "bank_months_count",
+  "has_others_cards",
+  "proposed_credit_limit",
+  "foreign_request",
+  "source",
+  "session_length_in_minutes",
+  "device_os",
+  "keep_alive_session",
+  "device_distinct_emails_8w"
+ ],
+ "entrenamiento": {
+  "1000_rep0": {
+   "semilla": 1000,
+   "n": 1000,
+   "fraudes": 100,
+   "columnas_preprocesadas": 53,
+   "huella_prueba": "5913383c90803bc6"
+  },
+  "1000_rep1": {
+   "semilla": 1001,
+   "n": 1000,
+   "fraudes": 100,
+   "columnas_preprocesadas": 53,
+   "huella_prueba": "bf6046e204541c33"
+  },
+  "1000_rep2": {
+   "semilla": 1002,
+   "n": 1000,
+   "fraudes": 100,
+   "columnas_preprocesadas": 53,
+   "huella_prueba": "2e8d6aaa526984aa"
+  },
+  "1000_rep3": {
+   "semilla": 1003,
+   "n": 1000,
+   "fraudes": 100,
+   "columnas_preprocesadas": 52,
+   "huella_prueba": "f47d899a6f2f7148"
+  },
+  "1000_rep4": {
+   "semilla": 1004,
+   "n": 1000,
+   "fraudes": 100,
+   "columnas_preprocesadas": 54,
+   "huella_prueba": "e57acd9071a8cfef"
+  },
+  "1000_rep5": {
+   "semilla": 1005,
+   "n": 1000,
+   "fraudes": 100,
+   "columnas_preprocesadas": 55,
+   "huella_prueba": "75e74307dd3b3ea5"
+  },
+  "1000_rep6": {
+   "semilla": 1006,
+   "n": 1000,
+   "fraudes": 100,
+   "columnas_preprocesadas": 52,
+   "huella_prueba": "3fe125989316ea65"
+  },
+  "1000_rep7": {
+   "semilla": 1007,
+   "n": 1000,
+   "fraudes": 100,
+   "columnas_preprocesadas": 54,
+   "huella_prueba": "3a20f184878e9f3d"
+  },
+  "1000_rep8": {
+   "semilla": 1008,
+   "n": 1000,
+   "fraudes": 100,
+   "columnas_preprocesadas": 51,
+   "huella_prueba": "c10c791f4d992188"
+  },
+  "1000_rep9": {
+   "semilla": 1009,
+   "n": 1000,
+   "fraudes": 100,
+   "columnas_preprocesadas": 50,
+   "huella_prueba": "781026b59d0d512e"
+  },
+  "2500_rep0": {
+   "semilla": 1000,
+   "n": 2500,
+   "fraudes": 250,
+   "columnas_preprocesadas": 54,
+   "huella_prueba": "5a52f100de082487"
+  },
+  "2500_rep1": {
+   "semilla": 1001,
+   "n": 2500,
+   "fraudes": 250,
+   "columnas_preprocesadas": 54,
+   "huella_prueba": "3f3c131af9d4ab51"
+  },
+  "2500_rep2": {
+   "semilla": 1002,
+   "n": 2500,
+   "fraudes": 250,
+   "columnas_preprocesadas": 55,
+   "huella_prueba": "3bdf18f021636814"
+  },
+  "2500_rep3": {
+   "semilla": 1003,
+   "n": 2500,
+   "fraudes": 250,
+   "columnas_preprocesadas": 54,
+   "huella_prueba": "1f4e3fc88f6b90e8"
+  },
+  "2500_rep4": {
+   "semilla": 1004,
+   "n": 2500,
+   "fraudes": 250,
+   "columnas_preprocesadas": 55,
+   "huella_prueba": "ba2c46ad5fd5a8e9"
+  },
+  "2500_rep5": {
+   "semilla": 1005,
+   "n": 2500,
+   "fraudes": 250,
+   "columnas_preprocesadas": 56,
+   "huella_prueba": "75c1800abd930c1e"
+  },
+  "2500_rep6": {
+   "semilla": 1006,
+   "n": 2500,
+   "fraudes": 250,
+   "columnas_preprocesadas": 53,
+   "huella_prueba": "b498082001eccb27"
+  },
+  "2500_rep7": {
+   "semilla": 1007,
+   "n": 2500,
+   "fraudes": 250,
+   "columnas_preprocesadas": 54,
+   "huella_prueba": "807bdfdc0d097f8a"
+  },
+  "2500_rep8": {
+   "semilla": 1008,
+   "n": 2500,
+   "fraudes": 250,
+   "columnas_preprocesadas": 54,
+   "huella_prueba": "abe3a99861d73565"
+  },
+  "2500_rep9": {
+   "semilla": 1009,
+   "n": 2500,
+   "fraudes": 250,
+   "columnas_preprocesadas": 53,
+   "huella_prueba": "44f8a0bc20998c7b"
+  },
+  "5000_rep0": {
+   "semilla": 1000,
+   "n": 5000,
+   "fraudes": 500,
+   "columnas_preprocesadas": 55,
+   "huella_prueba": "89c9f712ef628b31"
+  },
+  "5000_rep1": {
+   "semilla": 1001,
+   "n": 5000,
+   "fraudes": 500,
+   "columnas_preprocesadas": 55,
+   "huella_prueba": "d5fce789f12932a8"
+  },
+  "5000_rep2": {
+   "semilla": 1002,
+   "n": 5000,
+   "fraudes": 500,
+   "columnas_preprocesadas": 55,
+   "huella_prueba": "b4d17ce4c1713ba9"
+  },
+  "5000_rep3": {
+   "semilla": 1003,
+   "n": 5000,
+   "fraudes": 500,
+   "columnas_preprocesadas": 55,
+   "huella_prueba": "87e513433a68b5db"
+  },
+  "5000_rep4": {
+   "semilla": 1004,
+   "n": 5000,
+   "fraudes": 500,
+   "columnas_preprocesadas": 55,
+   "huella_prueba": "87cd92357f18f80c"
+  },
+  "5000_rep5": {
+   "semilla": 1005,
+   "n": 5000,
+   "fraudes": 500,
+   "columnas_preprocesadas": 56,
+   "huella_prueba": "b9a0425be262abff"
+  },
+  "5000_rep6": {
+   "semilla": 1006,
+   "n": 5000,
+   "fraudes": 500,
+   "columnas_preprocesadas": 55,
+   "huella_prueba": "e869c01f21d2b383"
+  },
+  "5000_rep7": {
+   "semilla": 1007,
+   "n": 5000,
+   "fraudes": 500,
+   "columnas_preprocesadas": 56,
+   "huella_prueba": "e214a3e5ddbfa9e3"
+  },
+  "5000_rep8": {
+   "semilla": 1008,
+   "n": 5000,
+   "fraudes": 500,
+   "columnas_preprocesadas": 54,
+   "huella_prueba": "358ad4f875c4f2dd"
+  },
+  "5000_rep9": {
+   "semilla": 1009,
+   "n": 5000,
+   "fraudes": 500,
+   "columnas_preprocesadas": 55,
+   "huella_prueba": "f03a29d2488783da"
+  },
+  "10000_rep0": {
+   "semilla": 1000,
+   "n": 10000,
+   "fraudes": 1000,
+   "columnas_preprocesadas": 56,
+   "huella_prueba": "47202f5fe3d6c9b4"
+  },
+  "10000_rep1": {
+   "semilla": 1001,
+   "n": 10000,
+   "fraudes": 1000,
+   "columnas_preprocesadas": 56,
+   "huella_prueba": "36b54a7594c1a494"
+  },
+  "10000_rep2": {
+   "semilla": 1002,
+   "n": 10000,
+   "fraudes": 1000,
+   "columnas_preprocesadas": 56,
+   "huella_prueba": "1b87d4bb089159bd"
+  },
+  "10000_rep3": {
+   "semilla": 1003,
+   "n": 10000,
+   "fraudes": 1000,
+   "columnas_preprocesadas": 56,
+   "huella_prueba": "42c80fb923533ffc"
+  },
+  "10000_rep4": {
+   "semilla": 1004,
+   "n": 10000,
+   "fraudes": 1000,
+   "columnas_preprocesadas": 56,
+   "huella_prueba": "1e4cfd24886ca494"
+  },
+  "10000_rep5": {
+   "semilla": 1005,
+   "n": 10000,
+   "fraudes": 1000,
+   "columnas_preprocesadas": 56,
+   "huella_prueba": "02b3de9f90408a71"
+  },
+  "10000_rep6": {
+   "semilla": 1006,
+   "n": 10000,
+   "fraudes": 1000,
+   "columnas_preprocesadas": 55,
+   "huella_prueba": "ab740e153eb3d484"
+  },
+  "10000_rep7": {
+   "semilla": 1007,
+   "n": 10000,
+   "fraudes": 1000,
+   "columnas_preprocesadas": 56,
+   "huella_prueba": "f3299b6ffaa05a87"
+  },
+  "10000_rep8": {
+   "semilla": 1008,
+   "n": 10000,
+   "fraudes": 1000,
+   "columnas_preprocesadas": 55,
+   "huella_prueba": "6e0672093a5ee303"
+  },
+  "10000_rep9": {
+   "semilla": 1009,
+   "n": 10000,
+   "fraudes": 1000,
+   "columnas_preprocesadas": 55,
+   "huella_prueba": "c8c19c7dda32c15a"
+  },
+  "completo_rep0": {
+   "semilla": 1000,
+   "n": 67400,
+   "fraudes": 6740,
+   "columnas_preprocesadas": 56,
+   "huella_prueba": "f790b02c3e275a3b"
+  },
+  "completo_rep1": {
+   "semilla": 1001,
+   "n": 67400,
+   "fraudes": 6740,
+   "columnas_preprocesadas": 56,
+   "huella_prueba": "1b606c2c40b22073"
+  },
+  "completo_rep2": {
+   "semilla": 1002,
+   "n": 67400,
+   "fraudes": 6740,
+   "columnas_preprocesadas": 56,
+   "huella_prueba": "2041fa625e5ff0e5"
+  },
+  "completo_rep3": {
+   "semilla": 1003,
+   "n": 67400,
+   "fraudes": 6740,
+   "columnas_preprocesadas": 56,
+   "huella_prueba": "3ba63a9b3fd79828"
+  },
+  "completo_rep4": {
+   "semilla": 1004,
+   "n": 67400,
+   "fraudes": 6740,
+   "columnas_preprocesadas": 56,
+   "huella_prueba": "740608822addccd9"
+  },
+  "completo_rep5": {
+   "semilla": 1005,
+   "n": 67400,
+   "fraudes": 6740,
+   "columnas_preprocesadas": 56,
+   "huella_prueba": "2dc3c8c40d93f70c"
+  },
+  "completo_rep6": {
+   "semilla": 1006,
+   "n": 67400,
+   "fraudes": 6740,
+   "columnas_preprocesadas": 56,
+   "huella_prueba": "1862341bc8df473c"
+  },
+  "completo_rep7": {
+   "semilla": 1007,
+   "n": 67400,
+   "fraudes": 6740,
+   "columnas_preprocesadas": 56,
+   "huella_prueba": "fa37793139c6c29f"
+  },
+  "completo_rep8": {
+   "semilla": 1008,
+   "n": 67400,
+   "fraudes": 6740,
+   "columnas_preprocesadas": 56,
+   "huella_prueba": "8ef788902d6352f8"
+  },
+  "completo_rep9": {
+   "semilla": 1009,
+   "n": 67400,
+   "fraudes": 6740,
+   "columnas_preprocesadas": 56,
+   "huella_prueba": "d2f3b50ade9c2485"
+  }
+ }
+}
