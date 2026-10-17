@@ -1,0 +1,16 @@
+# Python 3.9. Modelos clásicos, TabPFN v2 y análisis (versiones de resultados_colab/entorno_tiempos_principal.json).
+# PyTorch con CUDA 11.8:  pip install -r requirements-clasicos-v2.txt --extra-index-url https://download.pytorch.org/whl/cu118
+numpy==1.24.4
+pandas==2.3.1
+scipy==1.13.1
+scikit-learn==1.6.1
+joblib==1.5.1
+threadpoolctl==3.6.0
+xgboost==2.1.4
+tensorflow==2.11.0
+torch==2.7.1
+tabpfn==2.1.3
+huggingface-hub==0.36.1
+einops==0.8.1
+matplotlib==3.6.3
+openpyxl==3.1.5

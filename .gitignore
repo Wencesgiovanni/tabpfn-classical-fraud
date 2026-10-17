@@ -1,0 +1,7 @@
+# Datos (se descargan de los autores de BAF; ver README)
+data/*
+!data/LEEME.md
+paquete_colab/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/

@@ -1,0 +1,7 @@
+# Python 3.13 (Python por defecto de Google Colab). TabPFN-3.5 (versiones de resultados_colab/entorno_tabpfn35.json).
+# PyTorch 2.11.0 con CUDA 13.0 ya viene instalado en Colab.
+tabpfn==9.1.0
+torch==2.11.0
+scikit-learn==1.6.1
+numpy==2.1.3
+pandas==2.2.3
