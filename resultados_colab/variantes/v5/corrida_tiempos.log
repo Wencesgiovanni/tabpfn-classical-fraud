@@ -1,0 +1,93 @@
+2026-11-20 20:17:20 Entorno: {'grupo': 'variantes', 'python': '3.9.25 (main, Oct 31 2025, 23:00:23) \n[Clang 21.1.4 ]', 'plataforma': 'Linux-6.6.159+-x86_64-with-glibc2.39', 'cpu': 'Intel(R) Xeon(R) CPU @ 2.20GHz', 'nucleos_logicos': 12, 'gpu': 'NVIDIA A100-SXM4-80GB', 'memoria_gpu_gb': 85.1, 'tabpfn': '2.1.3', 'torch': '2.7.1+cu118', 'scikit-learn': '1.6.1', 'xgboost': '2.1.4', 'tensorflow': '2.11.0', 'numpy': '1.24.4', 'pandas': '2.3.1', 'scipy': '1.13.1'}
+2026-11-20 20:17:33 Pendientes: 90 ajustes (variantes)
+2026-11-20 20:19:05 [1/90] 10000_rep0 defecto TabPFN: PR-AUC 0.0657 (publicado nan) | ajuste 1.57 s, predicción 63.10 s | 2 min transcurridos
+2026-11-20 20:19:06 [2/90] 10000_rep0 defecto XGBoost: PR-AUC 0.0572 (publicado nan) | ajuste 0.45 s, predicción 0.06 s | 2 min transcurridos
+2026-11-20 20:19:16 [3/90] 10000_rep0 ajustado XGBoost: PR-AUC 0.0679 (publicado nan) | ajuste 0.49 s, búsqueda 10.4 s, predicción 0.10 s | 2 min transcurridos
+2026-11-20 20:19:17 [4/90] 10000_rep0 defecto Random Forest: PR-AUC 0.0711 (publicado nan) | ajuste 0.38 s, predicción 0.07 s | 2 min transcurridos
+2026-11-20 20:19:19 [5/90] 10000_rep0 defecto Logistic L1: PR-AUC 0.0708 (publicado nan) | ajuste 2.32 s, predicción 0.01 s | 2 min transcurridos
+2026-11-20 20:19:21 [6/90] completo_rep0 defecto XGBoost: PR-AUC 0.0668 (publicado nan) | ajuste 1.06 s, predicción 0.06 s | 2 min transcurridos
+2026-11-20 20:20:00 [7/90] completo_rep0 ajustado XGBoost: PR-AUC 0.0739 (publicado nan) | ajuste 2.70 s, búsqueda 38.0 s, predicción 0.06 s | 2 min transcurridos
+2026-11-20 20:20:02 [8/90] completo_rep0 defecto Random Forest: PR-AUC 0.0709 (publicado nan) | ajuste 2.39 s, predicción 0.10 s | 2 min transcurridos
+2026-11-20 20:20:29 [9/90] completo_rep0 defecto Logistic L1: PR-AUC 0.0714 (publicado nan) | ajuste 26.78 s, predicción 0.01 s | 3 min transcurridos
+2026-11-20 20:21:59 [10/90] 10000_rep1 defecto TabPFN: PR-AUC 0.0564 (publicado nan) | ajuste 1.58 s, predicción 63.07 s | 4 min transcurridos
+2026-11-20 20:22:00 [11/90] 10000_rep1 defecto XGBoost: PR-AUC 0.0473 (publicado nan) | ajuste 0.62 s, predicción 0.10 s | 4 min transcurridos
+2026-11-20 20:22:14 [12/90] 10000_rep1 ajustado XGBoost: PR-AUC 0.0674 (publicado nan) | ajuste 0.44 s, búsqueda 13.0 s, predicción 0.07 s | 5 min transcurridos
+2026-11-20 20:22:14 [13/90] 10000_rep1 defecto Random Forest: PR-AUC 0.0588 (publicado nan) | ajuste 0.40 s, predicción 0.08 s | 5 min transcurridos
+2026-11-20 20:22:17 [14/90] 10000_rep1 defecto Logistic L1: PR-AUC 0.0692 (publicado nan) | ajuste 2.86 s, predicción 0.01 s | 5 min transcurridos
+2026-11-20 20:22:19 [15/90] completo_rep1 defecto XGBoost: PR-AUC 0.0631 (publicado nan) | ajuste 1.08 s, predicción 0.06 s | 5 min transcurridos
+2026-11-20 20:23:01 [16/90] completo_rep1 ajustado XGBoost: PR-AUC 0.0823 (publicado nan) | ajuste 1.37 s, búsqueda 41.9 s, predicción 0.05 s | 5 min transcurridos
+2026-11-20 20:23:04 [17/90] completo_rep1 defecto Random Forest: PR-AUC 0.0738 (publicado nan) | ajuste 2.43 s, predicción 0.10 s | 6 min transcurridos
+2026-11-20 20:24:13 [18/90] completo_rep1 defecto Logistic L1: PR-AUC 0.0709 (publicado nan) | ajuste 68.36 s, predicción 0.01 s | 7 min transcurridos
+2026-11-20 20:25:43 [19/90] 10000_rep2 defecto TabPFN: PR-AUC 0.0583 (publicado nan) | ajuste 1.64 s, predicción 63.04 s | 8 min transcurridos
+2026-11-20 20:25:43 [20/90] 10000_rep2 defecto XGBoost: PR-AUC 0.0506 (publicado nan) | ajuste 0.44 s, predicción 0.06 s | 8 min transcurridos
+2026-11-20 20:25:56 [21/90] 10000_rep2 ajustado XGBoost: PR-AUC 0.0674 (publicado nan) | ajuste 0.85 s, búsqueda 11.6 s, predicción 0.22 s | 8 min transcurridos
+2026-11-20 20:25:56 [22/90] 10000_rep2 defecto Random Forest: PR-AUC 0.0615 (publicado nan) | ajuste 0.37 s, predicción 0.07 s | 8 min transcurridos
+2026-11-20 20:25:58 [23/90] 10000_rep2 defecto Logistic L1: PR-AUC 0.0666 (publicado nan) | ajuste 1.79 s, predicción 0.01 s | 8 min transcurridos
+2026-11-20 20:26:00 [24/90] completo_rep2 defecto XGBoost: PR-AUC 0.0652 (publicado nan) | ajuste 1.06 s, predicción 0.06 s | 8 min transcurridos
+2026-11-20 20:26:40 [25/90] completo_rep2 ajustado XGBoost: PR-AUC 0.0735 (publicado nan) | ajuste 2.79 s, búsqueda 39.7 s, predicción 0.21 s | 9 min transcurridos
+2026-11-20 20:26:43 [26/90] completo_rep2 defecto Random Forest: PR-AUC 0.0731 (publicado nan) | ajuste 2.40 s, predicción 0.10 s | 9 min transcurridos
+2026-11-20 20:27:03 [27/90] completo_rep2 defecto Logistic L1: PR-AUC 0.0713 (publicado nan) | ajuste 19.73 s, predicción 0.01 s | 10 min transcurridos
+2026-11-20 20:28:33 [28/90] 10000_rep3 defecto TabPFN: PR-AUC 0.0557 (publicado nan) | ajuste 1.58 s, predicción 63.04 s | 11 min transcurridos
+2026-11-20 20:28:34 [29/90] 10000_rep3 defecto XGBoost: PR-AUC 0.0490 (publicado nan) | ajuste 0.48 s, predicción 0.06 s | 11 min transcurridos
+2026-11-20 20:28:48 [30/90] 10000_rep3 ajustado XGBoost: PR-AUC 0.0545 (publicado nan) | ajuste 0.81 s, búsqueda 13.8 s, predicción 0.18 s | 11 min transcurridos
+2026-11-20 20:28:49 [31/90] 10000_rep3 defecto Random Forest: PR-AUC 0.0613 (publicado nan) | ajuste 0.37 s, predicción 0.21 s | 11 min transcurridos
+2026-11-20 20:28:50 [32/90] 10000_rep3 defecto Logistic L1: PR-AUC 0.0637 (publicado nan) | ajuste 1.33 s, predicción 0.01 s | 11 min transcurridos
+2026-11-20 20:28:52 [33/90] completo_rep3 defecto XGBoost: PR-AUC 0.0626 (publicado nan) | ajuste 1.08 s, predicción 0.06 s | 11 min transcurridos
+2026-11-20 20:29:36 [34/90] completo_rep3 ajustado XGBoost: PR-AUC 0.0656 (publicado nan) | ajuste 4.69 s, búsqueda 43.2 s, predicción 0.32 s | 12 min transcurridos
+2026-11-20 20:29:39 [35/90] completo_rep3 defecto Random Forest: PR-AUC 0.0746 (publicado nan) | ajuste 2.55 s, predicción 0.10 s | 12 min transcurridos
+2026-11-20 20:30:23 [36/90] completo_rep3 defecto Logistic L1: PR-AUC 0.0705 (publicado nan) | ajuste 44.01 s, predicción 0.01 s | 13 min transcurridos
+2026-11-20 20:31:53 [37/90] 10000_rep4 defecto TabPFN: PR-AUC 0.0616 (publicado nan) | ajuste 1.54 s, predicción 63.03 s | 14 min transcurridos
+2026-11-20 20:31:54 [38/90] 10000_rep4 defecto XGBoost: PR-AUC 0.0589 (publicado nan) | ajuste 0.43 s, predicción 0.06 s | 14 min transcurridos
+2026-11-20 20:32:07 [39/90] 10000_rep4 ajustado XGBoost: PR-AUC 0.0651 (publicado nan) | ajuste 0.59 s, búsqueda 12.3 s, predicción 0.11 s | 15 min transcurridos
+2026-11-20 20:32:07 [40/90] 10000_rep4 defecto Random Forest: PR-AUC 0.0688 (publicado nan) | ajuste 0.35 s, predicción 0.07 s | 15 min transcurridos
+2026-11-20 20:32:11 [41/90] 10000_rep4 defecto Logistic L1: PR-AUC 0.0746 (publicado nan) | ajuste 3.58 s, predicción 0.01 s | 15 min transcurridos
+2026-11-20 20:32:13 [42/90] completo_rep4 defecto XGBoost: PR-AUC 0.0673 (publicado nan) | ajuste 1.45 s, predicción 0.06 s | 15 min transcurridos
+2026-11-20 20:32:53 [43/90] completo_rep4 ajustado XGBoost: PR-AUC 0.0697 (publicado nan) | ajuste 0.52 s, búsqueda 39.6 s, predicción 0.03 s | 15 min transcurridos
+2026-11-20 20:32:56 [44/90] completo_rep4 defecto Random Forest: PR-AUC 0.0720 (publicado nan) | ajuste 2.40 s, predicción 0.10 s | 15 min transcurridos
+2026-11-20 20:34:01 [45/90] completo_rep4 defecto Logistic L1: PR-AUC 0.0706 (publicado nan) | ajuste 65.05 s, predicción 0.01 s | 16 min transcurridos
+2026-11-20 20:35:31 [46/90] 10000_rep5 defecto TabPFN: PR-AUC 0.0500 (publicado nan) | ajuste 1.54 s, predicción 63.03 s | 18 min transcurridos
+2026-11-20 20:35:32 [47/90] 10000_rep5 defecto XGBoost: PR-AUC 0.0479 (publicado nan) | ajuste 0.45 s, predicción 0.07 s | 18 min transcurridos
+2026-11-20 20:35:42 [48/90] 10000_rep5 ajustado XGBoost: PR-AUC 0.0548 (publicado nan) | ajuste 0.31 s, búsqueda 10.5 s, predicción 0.06 s | 18 min transcurridos
+2026-11-20 20:35:43 [49/90] 10000_rep5 defecto Random Forest: PR-AUC 0.0545 (publicado nan) | ajuste 0.37 s, predicción 0.07 s | 18 min transcurridos
+2026-11-20 20:35:46 [50/90] 10000_rep5 defecto Logistic L1: PR-AUC 0.0684 (publicado nan) | ajuste 2.64 s, predicción 0.01 s | 18 min transcurridos
+2026-11-20 20:35:48 [51/90] completo_rep5 defecto XGBoost: PR-AUC 0.0674 (publicado nan) | ajuste 1.13 s, predicción 0.06 s | 18 min transcurridos
+2026-11-20 20:36:26 [52/90] completo_rep5 ajustado XGBoost: PR-AUC 0.0669 (publicado nan) | ajuste 1.46 s, búsqueda 37.6 s, predicción 0.09 s | 19 min transcurridos
+2026-11-20 20:36:29 [53/90] completo_rep5 defecto Random Forest: PR-AUC 0.0720 (publicado nan) | ajuste 2.43 s, predicción 0.09 s | 19 min transcurridos
+2026-11-20 20:37:06 [54/90] completo_rep5 defecto Logistic L1: PR-AUC 0.0705 (publicado nan) | ajuste 37.72 s, predicción 0.01 s | 20 min transcurridos
+2026-11-20 20:38:37 [55/90] 10000_rep6 defecto TabPFN: PR-AUC 0.0563 (publicado nan) | ajuste 1.72 s, predicción 63.06 s | 21 min transcurridos
+2026-11-20 20:38:37 [56/90] 10000_rep6 defecto XGBoost: PR-AUC 0.0553 (publicado nan) | ajuste 0.50 s, predicción 0.09 s | 21 min transcurridos
+2026-11-20 20:38:50 [57/90] 10000_rep6 ajustado XGBoost: PR-AUC 0.0684 (publicado nan) | ajuste 0.37 s, búsqueda 12.5 s, predicción 0.11 s | 21 min transcurridos
+2026-11-20 20:38:51 [58/90] 10000_rep6 defecto Random Forest: PR-AUC 0.0622 (publicado nan) | ajuste 0.39 s, predicción 0.07 s | 21 min transcurridos
+2026-11-20 20:38:53 [59/90] 10000_rep6 defecto Logistic L1: PR-AUC 0.0730 (publicado nan) | ajuste 1.87 s, predicción 0.01 s | 21 min transcurridos
+2026-11-20 20:38:55 [60/90] completo_rep6 defecto XGBoost: PR-AUC 0.0651 (publicado nan) | ajuste 1.09 s, predicción 0.06 s | 21 min transcurridos
+2026-11-20 20:39:36 [61/90] completo_rep6 ajustado XGBoost: PR-AUC 0.0729 (publicado nan) | ajuste 1.13 s, búsqueda 40.9 s, predicción 0.06 s | 22 min transcurridos
+2026-11-20 20:39:39 [62/90] completo_rep6 defecto Random Forest: PR-AUC 0.0729 (publicado nan) | ajuste 2.37 s, predicción 0.11 s | 22 min transcurridos
+2026-11-20 20:40:19 [63/90] completo_rep6 defecto Logistic L1: PR-AUC 0.0720 (publicado nan) | ajuste 40.45 s, predicción 0.01 s | 23 min transcurridos
+2026-11-20 20:41:50 [64/90] 10000_rep7 defecto TabPFN: PR-AUC 0.0580 (publicado nan) | ajuste 1.57 s, predicción 63.17 s | 24 min transcurridos
+2026-11-20 20:41:50 [65/90] 10000_rep7 defecto XGBoost: PR-AUC 0.0556 (publicado nan) | ajuste 0.45 s, predicción 0.06 s | 24 min transcurridos
+2026-11-20 20:42:03 [66/90] 10000_rep7 ajustado XGBoost: PR-AUC 0.0705 (publicado nan) | ajuste 0.44 s, búsqueda 12.1 s, predicción 0.07 s | 25 min transcurridos
+2026-11-20 20:42:03 [67/90] 10000_rep7 defecto Random Forest: PR-AUC 0.0656 (publicado nan) | ajuste 0.39 s, predicción 0.08 s | 25 min transcurridos
+2026-11-20 20:42:06 [68/90] 10000_rep7 defecto Logistic L1: PR-AUC 0.0707 (publicado nan) | ajuste 2.81 s, predicción 0.01 s | 25 min transcurridos
+2026-11-20 20:42:08 [69/90] completo_rep7 defecto XGBoost: PR-AUC 0.0641 (publicado nan) | ajuste 1.09 s, predicción 0.06 s | 25 min transcurridos
+2026-11-20 20:42:44 [70/90] completo_rep7 ajustado XGBoost: PR-AUC 0.0739 (publicado nan) | ajuste 1.06 s, búsqueda 35.6 s, predicción 0.07 s | 25 min transcurridos
+2026-11-20 20:42:47 [71/90] completo_rep7 defecto Random Forest: PR-AUC 0.0732 (publicado nan) | ajuste 2.64 s, predicción 0.10 s | 25 min transcurridos
+2026-11-20 20:42:59 [72/90] completo_rep7 defecto Logistic L1: PR-AUC 0.0709 (publicado nan) | ajuste 11.96 s, predicción 0.01 s | 25 min transcurridos
+2026-11-20 20:44:30 [73/90] 10000_rep8 defecto TabPFN: PR-AUC 0.0581 (publicado nan) | ajuste 1.67 s, predicción 63.08 s | 27 min transcurridos
+2026-11-20 20:44:30 [74/90] 10000_rep8 defecto XGBoost: PR-AUC 0.0600 (publicado nan) | ajuste 0.46 s, predicción 0.08 s | 27 min transcurridos
+2026-11-20 20:44:43 [75/90] 10000_rep8 ajustado XGBoost: PR-AUC 0.0652 (publicado nan) | ajuste 0.94 s, búsqueda 12.4 s, predicción 0.14 s | 27 min transcurridos
+2026-11-20 20:44:44 [76/90] 10000_rep8 defecto Random Forest: PR-AUC 0.0691 (publicado nan) | ajuste 0.37 s, predicción 0.08 s | 27 min transcurridos
+2026-11-20 20:44:48 [77/90] 10000_rep8 defecto Logistic L1: PR-AUC 0.0699 (publicado nan) | ajuste 3.72 s, predicción 0.01 s | 27 min transcurridos
+2026-11-20 20:44:49 [78/90] completo_rep8 defecto XGBoost: PR-AUC 0.0615 (publicado nan) | ajuste 1.08 s, predicción 0.06 s | 27 min transcurridos
+2026-11-20 20:45:26 [79/90] completo_rep8 ajustado XGBoost: PR-AUC 0.0660 (publicado nan) | ajuste 2.11 s, búsqueda 35.7 s, predicción 0.13 s | 28 min transcurridos
+2026-11-20 20:45:28 [80/90] completo_rep8 defecto Random Forest: PR-AUC 0.0753 (publicado nan) | ajuste 2.38 s, predicción 0.10 s | 28 min transcurridos
+2026-11-20 20:47:04 [81/90] completo_rep8 defecto Logistic L1: PR-AUC 0.0705 (publicado nan) | ajuste 95.95 s, predicción 0.01 s | 30 min transcurridos
+2026-11-20 20:48:35 [82/90] 10000_rep9 defecto TabPFN: PR-AUC 0.0581 (publicado nan) | ajuste 1.57 s, predicción 63.33 s | 31 min transcurridos
+2026-11-20 20:48:35 [83/90] 10000_rep9 defecto XGBoost: PR-AUC 0.0625 (publicado nan) | ajuste 0.49 s, predicción 0.06 s | 31 min transcurridos
+2026-11-20 20:48:50 [84/90] 10000_rep9 ajustado XGBoost: PR-AUC 0.0715 (publicado nan) | ajuste 0.55 s, búsqueda 14.1 s, predicción 0.08 s | 31 min transcurridos
+2026-11-20 20:48:50 [85/90] 10000_rep9 defecto Random Forest: PR-AUC 0.0716 (publicado nan) | ajuste 0.36 s, predicción 0.08 s | 31 min transcurridos
+2026-11-20 20:48:52 [86/90] 10000_rep9 defecto Logistic L1: PR-AUC 0.0703 (publicado nan) | ajuste 1.47 s, predicción 0.01 s | 31 min transcurridos
+2026-11-20 20:48:54 [87/90] completo_rep9 defecto XGBoost: PR-AUC 0.0630 (publicado nan) | ajuste 1.06 s, predicción 0.06 s | 31 min transcurridos
+2026-11-20 20:49:37 [88/90] completo_rep9 ajustado XGBoost: PR-AUC 0.0651 (publicado nan) | ajuste 1.34 s, búsqueda 42.4 s, predicción 0.07 s | 32 min transcurridos
+2026-11-20 20:49:40 [89/90] completo_rep9 defecto Random Forest: PR-AUC 0.0720 (publicado nan) | ajuste 2.56 s, predicción 0.10 s | 32 min transcurridos
+2026-11-20 20:50:24 [90/90] completo_rep9 defecto Logistic L1: PR-AUC 0.0706 (publicado nan) | ajuste 44.80 s, predicción 0.01 s | 33 min transcurridos
+2026-11-20 20:50:24 Terminado.

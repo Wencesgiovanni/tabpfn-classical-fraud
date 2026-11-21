@@ -1,0 +1,23 @@
+% === Generado por analizar_robustez.py: no editar a mano ===
+\begin{table}[htbp]
+\centering
+\caption{Ablation on Variant V with 10{,}000 training rows: test performance with and without $x_1$ and $x_2$ (means over the same 10 repetitions, with the same training rows and seeds) and paired change (mean $\pm$ 95\% CI). Every change is positive in all ten repetitions (two-sided Wilcoxon signed-rank test, $p = 0.002$).}
+\label{tab:ablation}
+\footnotesize
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{l c c c c c c c c c}
+\toprule
+ & \multicolumn{3}{c}{PR-AUC} & \multicolumn{3}{c}{ROC-AUC} & \multicolumn{3}{c}{Recall@5\%FPR} \\
+\cmidrule(lr){2-4}\cmidrule(lr){5-7}\cmidrule(lr){8-10}
+Method & With & Without & Change & With & Without & Change & With & Without & Change \\
+\midrule
+TabPFN-3.5 & 0.068 & 0.145 & $+0.077 \pm 0.005$ & 0.735 & 0.878 & $+0.143 \pm 0.008$ & 0.352 & 0.526 & $+0.174 \pm 0.010$ \\
+TabPFN~v2 & 0.058 & 0.131 & $+0.073 \pm 0.004$ & 0.732 & 0.872 & $+0.140 \pm 0.005$ & 0.332 & 0.515 & $+0.182 \pm 0.010$ \\
+XGBoost (tuned) & 0.065 & 0.129 & $+0.063 \pm 0.007$ & 0.789 & 0.868 & $+0.079 \pm 0.011$ & 0.339 & 0.496 & $+0.157 \pm 0.018$ \\
+XGBoost & 0.054 & 0.104 & $+0.049 \pm 0.006$ & 0.766 & 0.854 & $+0.088 \pm 0.006$ & 0.309 & 0.451 & $+0.142 \pm 0.009$ \\
+Random Forest & 0.064 & 0.109 & $+0.044 \pm 0.004$ & 0.811 & 0.850 & $+0.040 \pm 0.004$ & 0.345 & 0.458 & $+0.113 \pm 0.007$ \\
+Logistic $L_1$ & 0.070 & 0.106 & $+0.036 \pm 0.002$ & 0.810 & 0.862 & $+0.052 \pm 0.003$ & 0.356 & 0.468 & $+0.112 \pm 0.008$ \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}

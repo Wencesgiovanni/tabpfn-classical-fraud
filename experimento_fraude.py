@@ -114,7 +114,8 @@ class Registro:
 
 
 def cargar_datos(ruta_datos, ruta_cache, log):
-    """Lee la base BAF (variante Base): Base.csv de Kaggle o la copia Base.xlsx del estudio."""
+    """Lee la base BAF: Base.csv de Kaggle (o la copia Base.xlsx del estudio) o una de sus
+    variantes (Variant I.csv ... Variant V.csv)."""
     if ruta_cache.exists():
         log("Cargando caché", ruta_cache.name)
         return pd.read_pickle(ruta_cache)
@@ -130,9 +131,10 @@ def cargar_datos(ruta_datos, ruta_cache, log):
             df[c] = df[c].astype("int64")
         # La copia del estudio tiene las mismas filas en otro orden; como las particiones se
         # definen por posición, se restaura ese orden para que las semillas den exactamente
-        # las mismas particiones (orden[i] = fila de Base.csv que ocupa la posición i)
+        # las mismas particiones (orden[i] = fila de Base.csv que ocupa la posición i).
+        # Las variantes se usan en el orden de su archivo.
         ruta_orden = BASE_DIR / "particiones" / "orden_filas.npz"
-        if ruta_orden.exists():
+        if ruta_datos.stem == "Base" and ruta_orden.exists():
             orden = np.load(ruta_orden)["orden"]
             if len(orden) != len(df):
                 raise ValueError(f"{ruta_datos.name} no tiene las {len(orden):,} filas de BAF Base")

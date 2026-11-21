@@ -1,0 +1,25 @@
+2026-11-21 19:04:55 Datos: (1000000, 32); validación 20,000 (182 fraudes); prueba 50,000 (549 fraudes)
+2026-11-21 19:04:55 [1/10] 10000_rep0: datos y preprocesamiento idénticos (8fed00ccd5bcbd6c)
+2026-11-21 19:04:55 [2/10] 10000_rep1: datos y preprocesamiento idénticos (c3a6359db178e65d)
+2026-11-21 19:04:56 [3/10] 10000_rep2: datos y preprocesamiento idénticos (806752ac939efe73)
+2026-11-21 19:04:56 [4/10] 10000_rep3: datos y preprocesamiento idénticos (932f8efc53398ae5)
+2026-11-21 19:04:56 [5/10] 10000_rep4: datos y preprocesamiento idénticos (0d1a5830d8384336)
+2026-11-21 19:04:56 [6/10] 10000_rep5: datos y preprocesamiento idénticos (57fae1d5ce754344)
+2026-11-21 19:04:57 [7/10] 10000_rep6: datos y preprocesamiento idénticos (d007b6c5dfc72c16)
+2026-11-21 19:04:57 [8/10] 10000_rep7: datos y preprocesamiento idénticos (7da69e106f9c2eab)
+2026-11-21 19:04:57 [9/10] 10000_rep8: datos y preprocesamiento idénticos (aac54779939ce796)
+2026-11-21 19:04:57 [10/10] 10000_rep9: datos y preprocesamiento idénticos (d0498da388f41206)
+2026-11-21 19:04:57 Terminado.
+2026-11-21 19:05:00 Datos: (1000000, 32); validación 20,000 (182 fraudes); prueba 50,000 (549 fraudes)
+2026-11-21 19:05:05 Entorno: {'python': '3.13.16 (main, Oct  1 2026, 15:40:24) [GCC 13.3.0]', 'plataforma': 'Linux-6.6.159+-x86_64-with-glibc2.39', 'tabpfn': '9.1.0', 'torch': '2.14.1+cu130', 'sklearn': '1.6.1', 'numpy': '2.4.6', 'pandas': '2.2.3', 'gpu': 'NVIDIA A100-SXM4-40GB', 'memoria_gpu_gb': 42.4, 'version_modelo': 'v3.5', 'lote': 5000}
+2026-11-21 19:06:09 [1/10] 10000_rep0: PR-AUC 0.1436, ROC-AUC 0.8764, recall@5%FPR 0.5173 | ajuste 5.5 s, predicción 40.3 s, GPU 8.3 GB | 1 min transcurridos
+2026-11-21 19:07:07 [2/10] 10000_rep1: PR-AUC 0.1469, ROC-AUC 0.8774, recall@5%FPR 0.5191 | ajuste 0.7 s, predicción 40.4 s, GPU 8.3 GB | 2 min transcurridos
+2026-11-21 19:08:05 [3/10] 10000_rep2: PR-AUC 0.1562, ROC-AUC 0.8825, recall@5%FPR 0.5392 | ajuste 0.7 s, predicción 40.5 s, GPU 8.3 GB | 3 min transcurridos
+2026-11-21 19:09:02 [4/10] 10000_rep3: PR-AUC 0.1454, ROC-AUC 0.8770, recall@5%FPR 0.5392 | ajuste 0.7 s, predicción 40.4 s, GPU 8.3 GB | 4 min transcurridos
+2026-11-21 19:10:00 [5/10] 10000_rep4: PR-AUC 0.1476, ROC-AUC 0.8788, recall@5%FPR 0.5319 | ajuste 0.7 s, predicción 40.4 s, GPU 8.3 GB | 5 min transcurridos
+2026-11-21 19:10:58 [6/10] 10000_rep5: PR-AUC 0.1378, ROC-AUC 0.8777, recall@5%FPR 0.5228 | ajuste 0.7 s, predicción 40.4 s, GPU 8.3 GB | 6 min transcurridos
+2026-11-21 19:11:55 [7/10] 10000_rep6: PR-AUC 0.1425, ROC-AUC 0.8768, recall@5%FPR 0.5209 | ajuste 0.7 s, predicción 40.4 s, GPU 8.3 GB | 7 min transcurridos
+2026-11-21 19:12:53 [8/10] 10000_rep7: PR-AUC 0.1407, ROC-AUC 0.8808, recall@5%FPR 0.5319 | ajuste 0.7 s, predicción 40.3 s, GPU 8.3 GB | 8 min transcurridos
+2026-11-21 19:13:50 [9/10] 10000_rep8: PR-AUC 0.1467, ROC-AUC 0.8758, recall@5%FPR 0.5209 | ajuste 0.7 s, predicción 40.4 s, GPU 8.3 GB | 9 min transcurridos
+2026-11-21 19:14:48 [10/10] 10000_rep9: PR-AUC 0.1442, ROC-AUC 0.8780, recall@5%FPR 0.5155 | ajuste 0.7 s, predicción 40.6 s, GPU 8.3 GB | 10 min transcurridos
+2026-11-21 19:14:48 Terminado.

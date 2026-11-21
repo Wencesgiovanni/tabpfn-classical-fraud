@@ -1,0 +1,131 @@
+# Análisis de robustez (Base y variantes de BAF)
+
+[base 10000] pr_auc: Friedman chi2 = 43.49, p = 2.95e-08 (6 métodos)
+[base 10000] roc_auc: Friedman chi2 = 45.83, p = 9.84e-09 (6 métodos)
+[base 10000] recall_fpr5_test: Friedman chi2 = 44.90, p = 1.52e-08 (6 métodos)
+[base completo] pr_auc: Friedman chi2 = 37.04, p = 1.77e-07 (5 métodos)
+[base completo] roc_auc: Friedman chi2 = 39.28, p = 6.1e-08 (5 métodos)
+[base completo] recall_fpr5_test: Friedman chi2 = 32.57, p = 1.47e-06 (5 métodos)
+[v1 10000] pr_auc: Friedman chi2 = 45.54, p = 1.13e-08 (6 métodos)
+[v1 10000] roc_auc: Friedman chi2 = 46.51, p = 7.14e-09 (6 métodos)
+[v1 10000] recall_fpr5_test: Friedman chi2 = 42.13, p = 5.55e-08 (6 métodos)
+[v1 completo] pr_auc: Friedman chi2 = 38.32, p = 9.63e-08 (5 métodos)
+[v1 completo] roc_auc: Friedman chi2 = 39.28, p = 6.1e-08 (5 métodos)
+[v1 completo] recall_fpr5_test: Friedman chi2 = 37.53, p = 1.4e-07 (5 métodos)
+[v2 10000] pr_auc: Friedman chi2 = 45.83, p = 9.84e-09 (6 métodos)
+[v2 10000] roc_auc: Friedman chi2 = 48.17, p = 3.28e-09 (6 métodos)
+[v2 10000] recall_fpr5_test: Friedman chi2 = 45.29, p = 1.27e-08 (6 métodos)
+[v2 completo] pr_auc: Friedman chi2 = 37.04, p = 1.77e-07 (5 métodos)
+[v2 completo] roc_auc: Friedman chi2 = 37.84, p = 1.21e-07 (5 métodos)
+[v2 completo] recall_fpr5_test: Friedman chi2 = 36.28, p = 2.53e-07 (5 métodos)
+[v3 10000] pr_auc: Friedman chi2 = 50.00, p = 1.39e-09 (6 métodos)
+[v3 10000] roc_auc: Friedman chi2 = 50.00, p = 1.39e-09 (6 métodos)
+[v3 10000] recall_fpr5_test: Friedman chi2 = 48.18, p = 3.27e-09 (6 métodos)
+[v3 completo] pr_auc: Friedman chi2 = 39.28, p = 6.1e-08 (5 métodos)
+[v3 completo] roc_auc: Friedman chi2 = 40.00, p = 4.33e-08 (5 métodos)
+[v3 completo] recall_fpr5_test: Friedman chi2 = 39.28, p = 6.1e-08 (5 métodos)
+[v4 10000] pr_auc: Friedman chi2 = 43.31, p = 3.19e-08 (6 métodos)
+[v4 10000] roc_auc: Friedman chi2 = 44.86, p = 1.55e-08 (6 métodos)
+[v4 10000] recall_fpr5_test: Friedman chi2 = 39.56, p = 1.84e-07 (6 métodos)
+[v4 completo] pr_auc: Friedman chi2 = 36.40, p = 2.39e-07 (5 métodos)
+[v4 completo] roc_auc: Friedman chi2 = 38.32, p = 9.63e-08 (5 métodos)
+[v4 completo] recall_fpr5_test: Friedman chi2 = 38.33, p = 9.57e-08 (5 métodos)
+[v5 10000] pr_auc: Friedman chi2 = 37.43, p = 4.91e-07 (6 métodos)
+[v5 10000] roc_auc: Friedman chi2 = 46.06, p = 8.84e-09 (6 métodos)
+[v5 10000] recall_fpr5_test: Friedman chi2 = 33.98, p = 2.41e-06 (6 métodos)
+[v5 completo] pr_auc: Friedman chi2 = 22.24, p = 0.00018 (5 métodos)
+[v5 completo] roc_auc: Friedman chi2 = 36.88, p = 1.91e-07 (5 métodos)
+[v5 completo] recall_fpr5_test: Friedman chi2 = 25.55, p = 3.9e-05 (5 métodos)
+[v5sx 10000] pr_auc: Friedman chi2 = 45.03, p = 1.43e-08 (6 métodos)
+[v5sx 10000] roc_auc: Friedman chi2 = 47.94, p = 3.65e-09 (6 métodos)
+[v5sx 10000] recall_fpr5_test: Friedman chi2 = 43.88, p = 2.45e-08 (6 métodos)
+
+[base 10000] pr_auc: TabPFN-3.5 vs XGBoost ajustado: gana 10/10, dif. media +0.0183, p Holm = 0.0098
+[base 10000] pr_auc: TabPFN vs XGBoost ajustado: gana 9/10, dif. media +0.0066, p Holm = 0.0273
+[base 10000] roc_auc: TabPFN-3.5 vs XGBoost ajustado: gana 10/10, dif. media +0.0097, p Holm = 0.0098
+[base 10000] roc_auc: TabPFN vs XGBoost ajustado: gana 6/10, dif. media +0.0025, p Holm = 0.1309
+[base 10000] recall_fpr5_test: TabPFN-3.5 vs XGBoost ajustado: gana 10/10, dif. media +0.0211, p Holm = 0.0098
+[base 10000] recall_fpr5_test: TabPFN vs XGBoost ajustado: gana 7/10, dif. media +0.0125, p Holm = 0.1309
+[base completo] pr_auc: TabPFN-3.5 vs XGBoost ajustado: gana 10/10, dif. media +0.0116, p Holm = 0.0078
+[base completo] roc_auc: TabPFN-3.5 vs XGBoost ajustado: gana 10/10, dif. media +0.0039, p Holm = 0.0078
+[base completo] recall_fpr5_test: TabPFN-3.5 vs XGBoost ajustado: gana 9/10, dif. media +0.0124, p Holm = 0.0078
+[v1 10000] pr_auc: TabPFN-3.5 vs XGBoost ajustado: gana 9/10, dif. media +0.0133, p Holm = 0.0098
+[v1 10000] pr_auc: TabPFN vs XGBoost ajustado: gana 5/10, dif. media -0.0009, p Holm = 0.6953
+[v1 10000] roc_auc: TabPFN-3.5 vs XGBoost ajustado: gana 10/10, dif. media +0.0073, p Holm = 0.0098
+[v1 10000] roc_auc: TabPFN vs XGBoost ajustado: gana 1/10, dif. media -0.0013, p Holm = 0.0488
+[v1 10000] recall_fpr5_test: TabPFN-3.5 vs XGBoost ajustado: gana 7/10, dif. media +0.0107, p Holm = 0.0925
+[v1 10000] recall_fpr5_test: TabPFN vs XGBoost ajustado: gana 2/10, dif. media -0.0063, p Holm = 0.0273
+[v1 completo] pr_auc: TabPFN-3.5 vs XGBoost ajustado: gana 10/10, dif. media +0.0090, p Holm = 0.0078
+[v1 completo] roc_auc: TabPFN-3.5 vs XGBoost ajustado: gana 10/10, dif. media +0.0061, p Holm = 0.0078
+[v1 completo] recall_fpr5_test: TabPFN-3.5 vs XGBoost ajustado: gana 8/10, dif. media +0.0088, p Holm = 0.0327
+[v2 10000] pr_auc: TabPFN-3.5 vs XGBoost ajustado: gana 10/10, dif. media +0.0159, p Holm = 0.0098
+[v2 10000] pr_auc: TabPFN vs XGBoost ajustado: gana 9/10, dif. media +0.0086, p Holm = 0.0098
+[v2 10000] roc_auc: TabPFN-3.5 vs XGBoost ajustado: gana 10/10, dif. media +0.0076, p Holm = 0.0098
+[v2 10000] roc_auc: TabPFN vs XGBoost ajustado: gana 8/10, dif. media +0.0018, p Holm = 0.1934
+[v2 10000] recall_fpr5_test: TabPFN-3.5 vs XGBoost ajustado: gana 10/10, dif. media +0.0239, p Holm = 0.0098
+[v2 10000] recall_fpr5_test: TabPFN vs XGBoost ajustado: gana 8/10, dif. media +0.0106, p Holm = 0.0645
+[v2 completo] pr_auc: TabPFN-3.5 vs XGBoost ajustado: gana 10/10, dif. media +0.0098, p Holm = 0.0078
+[v2 completo] roc_auc: TabPFN-3.5 vs XGBoost ajustado: gana 10/10, dif. media +0.0044, p Holm = 0.0078
+[v2 completo] recall_fpr5_test: TabPFN-3.5 vs XGBoost ajustado: gana 10/10, dif. media +0.0265, p Holm = 0.0078
+[v3 10000] pr_auc: TabPFN-3.5 vs XGBoost ajustado: gana 10/10, dif. media +0.0396, p Holm = 0.0098
+[v3 10000] pr_auc: TabPFN vs XGBoost ajustado: gana 10/10, dif. media +0.0237, p Holm = 0.0098
+[v3 10000] roc_auc: TabPFN-3.5 vs XGBoost ajustado: gana 10/10, dif. media +0.0098, p Holm = 0.0098
+[v3 10000] roc_auc: TabPFN vs XGBoost ajustado: gana 10/10, dif. media +0.0053, p Holm = 0.0098
+[v3 10000] recall_fpr5_test: TabPFN-3.5 vs XGBoost ajustado: gana 10/10, dif. media +0.0224, p Holm = 0.0098
+[v3 10000] recall_fpr5_test: TabPFN vs XGBoost ajustado: gana 8/10, dif. media +0.0109, p Holm = 0.0214
+[v3 completo] pr_auc: TabPFN-3.5 vs XGBoost ajustado: gana 10/10, dif. media +0.0185, p Holm = 0.0078
+[v3 completo] roc_auc: TabPFN-3.5 vs XGBoost ajustado: gana 10/10, dif. media +0.0039, p Holm = 0.0078
+[v3 completo] recall_fpr5_test: TabPFN-3.5 vs XGBoost ajustado: gana 9/10, dif. media +0.0093, p Holm = 0.0078
+[v4 10000] pr_auc: TabPFN-3.5 vs XGBoost ajustado: gana 9/10, dif. media +0.0082, p Holm = 0.0098
+[v4 10000] pr_auc: TabPFN vs XGBoost ajustado: gana 1/10, dif. media -0.0043, p Holm = 0.0195
+[v4 10000] roc_auc: TabPFN-3.5 vs XGBoost ajustado: gana 10/10, dif. media +0.0108, p Holm = 0.0098
+[v4 10000] roc_auc: TabPFN vs XGBoost ajustado: gana 1/10, dif. media -0.0071, p Holm = 0.0293
+[v4 10000] recall_fpr5_test: TabPFN-3.5 vs XGBoost ajustado: gana 9/10, dif. media +0.0291, p Holm = 0.0098
+[v4 10000] recall_fpr5_test: TabPFN vs XGBoost ajustado: gana 4/10, dif. media -0.0044, p Holm = 0.6445
+[v4 completo] pr_auc: TabPFN-3.5 vs XGBoost ajustado: gana 10/10, dif. media +0.0103, p Holm = 0.0078
+[v4 completo] roc_auc: TabPFN-3.5 vs XGBoost ajustado: gana 10/10, dif. media +0.0078, p Holm = 0.0078
+[v4 completo] recall_fpr5_test: TabPFN-3.5 vs XGBoost ajustado: gana 9/10, dif. media +0.0257, p Holm = 0.0078
+[v5 10000] pr_auc: TabPFN-3.5 vs XGBoost ajustado: gana 7/10, dif. media +0.0027, p Holm = 0.2109
+[v5 10000] pr_auc: TabPFN vs XGBoost ajustado: gana 1/10, dif. media -0.0074, p Holm = 0.0098
+[v5 10000] roc_auc: TabPFN-3.5 vs XGBoost ajustado: gana 0/10, dif. media -0.0540, p Holm = 0.0098
+[v5 10000] roc_auc: TabPFN vs XGBoost ajustado: gana 0/10, dif. media -0.0569, p Holm = 0.0098
+[v5 10000] recall_fpr5_test: TabPFN-3.5 vs XGBoost ajustado: gana 7/10, dif. media +0.0131, p Holm = 0.0848
+[v5 10000] recall_fpr5_test: TabPFN vs XGBoost ajustado: gana 2/10, dif. media -0.0066, p Holm = 0.2135
+[v5 completo] pr_auc: TabPFN-3.5 vs XGBoost ajustado: gana 5/10, dif. media +0.0000, p Holm = 1.0000
+[v5 completo] roc_auc: TabPFN-3.5 vs XGBoost ajustado: gana 0/10, dif. media -0.0479, p Holm = 0.0078
+[v5 completo] recall_fpr5_test: TabPFN-3.5 vs XGBoost ajustado: gana 6/10, dif. media +0.0035, p Holm = 0.7500
+[v5sx 10000] pr_auc: TabPFN-3.5 vs XGBoost ajustado: gana 10/10, dif. media +0.0165, p Holm = 0.0098
+[v5sx 10000] pr_auc: TabPFN vs XGBoost ajustado: gana 6/10, dif. media +0.0020, p Holm = 0.5566
+[v5sx 10000] roc_auc: TabPFN-3.5 vs XGBoost ajustado: gana 10/10, dif. media +0.0098, p Holm = 0.0098
+[v5sx 10000] roc_auc: TabPFN vs XGBoost ajustado: gana 8/10, dif. media +0.0041, p Holm = 0.0371
+[v5sx 10000] recall_fpr5_test: TabPFN-3.5 vs XGBoost ajustado: gana 10/10, dif. media +0.0295, p Holm = 0.0098
+[v5sx 10000] recall_fpr5_test: TabPFN vs XGBoost ajustado: gana 6/10, dif. media +0.0185, p Holm = 0.0357
+
+[10000] TabPFN-3.5 vs XGBoost ajustado, PR-AUC: gana 55/60 repeticiones; media mayor en 6/6 conjuntos; Wilcoxon sobre medias por conjunto p = 0.0312; sobre todas las repeticiones p = 1.02e-10 (descriptivo: no independientes)
+[10000] TabPFN-3.5 vs XGBoost ajustado, ROC-AUC: gana 50/60 repeticiones; media mayor en 5/6 conjuntos; Wilcoxon sobre medias por conjunto p = 0.4375; sobre todas las repeticiones p = 0.00804 (descriptivo: no independientes)
+[10000] TabPFN-3.5 vs XGBoost ajustado, Recall at 5% FPR: gana 53/60 repeticiones; media mayor en 6/6 conjuntos; Wilcoxon sobre medias por conjunto p = 0.0312; sobre todas las repeticiones p = 5.32e-10 (descriptivo: no independientes)
+[10000] TabPFN vs XGBoost ajustado, PR-AUC: gana 35/60 repeticiones; media mayor en 3/6 conjuntos; Wilcoxon sobre medias por conjunto p = 0.5625; sobre todas las repeticiones p = 0.0529 (descriptivo: no independientes)
+[10000] TabPFN vs XGBoost ajustado, ROC-AUC: gana 26/60 repeticiones; media mayor en 3/6 conjuntos; Wilcoxon sobre medias por conjunto p = 0.8438; sobre todas las repeticiones p = 0.166 (descriptivo: no independientes)
+[10000] TabPFN vs XGBoost ajustado, Recall at 5% FPR: gana 31/60 repeticiones; media mayor en 3/6 conjuntos; Wilcoxon sobre medias por conjunto p = 0.4375; sobre todas las repeticiones p = 0.211 (descriptivo: no independientes)
+[completo] TabPFN-3.5 vs XGBoost ajustado, PR-AUC: gana 55/60 repeticiones; media mayor en 6/6 conjuntos; Wilcoxon sobre medias por conjunto p = 0.0312; sobre todas las repeticiones p = 2.21e-10 (descriptivo: no independientes)
+[completo] TabPFN-3.5 vs XGBoost ajustado, ROC-AUC: gana 50/60 repeticiones; media mayor en 5/6 conjuntos; Wilcoxon sobre medias por conjunto p = 0.4375; sobre todas las repeticiones p = 0.00804 (descriptivo: no independientes)
+[completo] TabPFN-3.5 vs XGBoost ajustado, Recall at 5% FPR: gana 51/60 repeticiones; media mayor en 6/6 conjuntos; Wilcoxon sobre medias por conjunto p = 0.0312; sobre todas las repeticiones p = 2.47e-09 (descriptivo: no independientes)
+
+Ablación PR-AUC TabPFN-3.5: con x1,x2 0.0679 -> sin 0.1452 (cambio +0.0772, p = 0.0020)
+Ablación PR-AUC TabPFN: con x1,x2 0.0578 -> sin 0.1306 (cambio +0.0728, p = 0.0020)
+Ablación PR-AUC XGBoost (ajustado): con x1,x2 0.0653 -> sin 0.1286 (cambio +0.0634, p = 0.0020)
+Ablación PR-AUC XGBoost: con x1,x2 0.0544 -> sin 0.1037 (cambio +0.0493, p = 0.0020)
+Ablación PR-AUC Random Forest: con x1,x2 0.0644 -> sin 0.1088 (cambio +0.0444, p = 0.0020)
+Ablación PR-AUC Logistic L1: con x1,x2 0.0697 -> sin 0.1056 (cambio +0.0358, p = 0.0020)
+Ablación ROC-AUC TabPFN-3.5: con x1,x2 0.7353 -> sin 0.8781 (cambio +0.1428, p = 0.0020)
+Ablación ROC-AUC TabPFN: con x1,x2 0.7324 -> sin 0.8724 (cambio +0.1400, p = 0.0020)
+Ablación ROC-AUC XGBoost (ajustado): con x1,x2 0.7893 -> sin 0.8683 (cambio +0.0790, p = 0.0020)
+Ablación ROC-AUC XGBoost: con x1,x2 0.7659 -> sin 0.8541 (cambio +0.0883, p = 0.0020)
+Ablación ROC-AUC Random Forest: con x1,x2 0.8109 -> sin 0.8504 (cambio +0.0396, p = 0.0020)
+Ablación ROC-AUC Logistic L1: con x1,x2 0.8098 -> sin 0.8622 (cambio +0.0524, p = 0.0020)
+Ablación Recall at 5% FPR TabPFN-3.5: con x1,x2 0.3521 -> sin 0.5259 (cambio +0.1738, p = 0.0020)
+Ablación Recall at 5% FPR TabPFN: con x1,x2 0.3324 -> sin 0.5148 (cambio +0.1824, p = 0.0020)
+Ablación Recall at 5% FPR XGBoost (ajustado): con x1,x2 0.3390 -> sin 0.4964 (cambio +0.1574, p = 0.0020)
+Ablación Recall at 5% FPR XGBoost: con x1,x2 0.3091 -> sin 0.4508 (cambio +0.1417, p = 0.0020)
+Ablación Recall at 5% FPR Random Forest: con x1,x2 0.3446 -> sin 0.4576 (cambio +0.1129, p = 0.0020)
+Ablación Recall at 5% FPR Logistic L1: con x1,x2 0.3559 -> sin 0.4679 (cambio +0.1120, p = 0.0020)

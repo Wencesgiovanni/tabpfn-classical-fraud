@@ -1,0 +1,13 @@
+{
+  "python": "3.13.16 (main, Oct  1 2026, 15:40:24) [GCC 13.3.0]",
+  "plataforma": "Linux-6.6.159+-x86_64-with-glibc2.39",
+  "tabpfn": "9.1.0",
+  "torch": "2.14.1+cu130",
+  "sklearn": "1.6.1",
+  "numpy": "2.4.6",
+  "pandas": "2.2.3",
+  "gpu": "NVIDIA A100-SXM4-40GB",
+  "memoria_gpu_gb": 42.4,
+  "version_modelo": "v3.5",
+  "lote": 5000
+}

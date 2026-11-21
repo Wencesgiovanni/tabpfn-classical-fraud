@@ -1,0 +1,190 @@
+2026-11-20 21:01:02 Datos: (1000000, 32); validación 20,000 (182 fraudes); prueba 50,000 (549 fraudes)
+2026-11-20 21:01:02 [1/20] 10000_rep0: datos y preprocesamiento idénticos (a76859d483acd40e)
+2026-11-20 21:01:03 [2/20] completo_rep0: datos y preprocesamiento idénticos (69a905145e448f14)
+2026-11-20 21:01:03 [3/20] 10000_rep1: datos y preprocesamiento idénticos (40362c3b716938f2)
+2026-11-20 21:01:04 [4/20] completo_rep1: datos y preprocesamiento idénticos (d6011e849da1ac33)
+2026-11-20 21:01:04 [5/20] 10000_rep2: datos y preprocesamiento idénticos (1224159e624f653b)
+2026-11-20 21:01:04 [6/20] completo_rep2: datos y preprocesamiento idénticos (51af5f228dcbe84f)
+2026-11-20 21:01:05 [7/20] 10000_rep3: datos y preprocesamiento idénticos (55a9db3b40f0fc1b)
+2026-11-20 21:01:05 [8/20] completo_rep3: datos y preprocesamiento idénticos (4a22c5d2c9dee267)
+2026-11-20 21:01:05 [9/20] 10000_rep4: datos y preprocesamiento idénticos (bf21c675ede5370b)
+2026-11-20 21:01:06 [10/20] completo_rep4: datos y preprocesamiento idénticos (9485aa14e32f49d2)
+2026-11-20 21:01:06 [11/20] 10000_rep5: datos y preprocesamiento idénticos (f5765e6f4aec9ac6)
+2026-11-20 21:01:06 [12/20] completo_rep5: datos y preprocesamiento idénticos (d0b64fe781adbbe9)
+2026-11-20 21:01:07 [13/20] 10000_rep6: datos y preprocesamiento idénticos (3f6d6ad6ced148b6)
+2026-11-20 21:01:07 [14/20] completo_rep6: datos y preprocesamiento idénticos (04233880d8f01082)
+2026-11-20 21:01:07 [15/20] 10000_rep7: datos y preprocesamiento idénticos (1c5e541d63a7307e)
+2026-11-20 21:01:08 [16/20] completo_rep7: datos y preprocesamiento idénticos (0ff4bf86981ce9ab)
+2026-11-20 21:01:08 [17/20] 10000_rep8: datos y preprocesamiento idénticos (f0d84b5f52fb5187)
+2026-11-20 21:01:08 [18/20] completo_rep8: datos y preprocesamiento idénticos (379e76f8eb903db1)
+2026-11-20 21:01:09 [19/20] 10000_rep9: datos y preprocesamiento idénticos (9362f1262036ec21)
+2026-11-20 21:01:09 [20/20] completo_rep9: datos y preprocesamiento idénticos (8585d05f619b5b7e)
+2026-11-20 21:01:09 Terminado.
+2026-11-20 21:01:12 Datos: (1000000, 32); validación 20,000 (182 fraudes); prueba 50,000 (549 fraudes)
+2026-11-20 21:01:15 Entorno: {'python': '3.13.16 (main, Oct  1 2026, 15:40:24) [GCC 13.3.0]', 'plataforma': 'Linux-6.6.159+-x86_64-with-glibc2.39', 'tabpfn': '9.1.0', 'torch': '2.14.1+cu130', 'sklearn': '1.6.1', 'numpy': '2.4.6', 'pandas': '2.2.3', 'gpu': 'NVIDIA A100-SXM4-80GB', 'memoria_gpu_gb': 85.1, 'version_modelo': 'v3.5', 'lote': 5000}
+2026-11-20 21:01:16 [10000_rep0] ERROR TabPFNLicenseError: TabPFN requires a one-time license acceptance to download
+model weights for local inference, but browser login is
+disabled (TABPFN_NO_BROWSER is set).
+
+Set the TABPFN_TOKEN environment variable with a valid API key
+obtained from https://ux.priorlabs.ai
+2026-11-20 21:01:17 [completo_rep0] ERROR TabPFNLicenseError: TabPFN requires a one-time license acceptance to download
+model weights for local inference, but browser login is
+disabled (TABPFN_NO_BROWSER is set).
+
+Set the TABPFN_TOKEN environment variable with a valid API key
+obtained from https://ux.priorlabs.ai
+2026-11-20 21:01:18 [10000_rep1] ERROR TabPFNLicenseError: TabPFN requires a one-time license acceptance to download
+model weights for local inference, but browser login is
+disabled (TABPFN_NO_BROWSER is set).
+
+Set the TABPFN_TOKEN environment variable with a valid API key
+obtained from https://ux.priorlabs.ai
+2026-11-20 21:01:19 [completo_rep1] ERROR TabPFNLicenseError: TabPFN requires a one-time license acceptance to download
+model weights for local inference, but browser login is
+disabled (TABPFN_NO_BROWSER is set).
+
+Set the TABPFN_TOKEN environment variable with a valid API key
+obtained from https://ux.priorlabs.ai
+2026-11-20 21:01:20 [10000_rep2] ERROR TabPFNLicenseError: TabPFN requires a one-time license acceptance to download
+model weights for local inference, but browser login is
+disabled (TABPFN_NO_BROWSER is set).
+
+Set the TABPFN_TOKEN environment variable with a valid API key
+obtained from https://ux.priorlabs.ai
+2026-11-20 21:01:21 [completo_rep2] ERROR TabPFNLicenseError: TabPFN requires a one-time license acceptance to download
+model weights for local inference, but browser login is
+disabled (TABPFN_NO_BROWSER is set).
+
+Set the TABPFN_TOKEN environment variable with a valid API key
+obtained from https://ux.priorlabs.ai
+2026-11-20 21:01:22 [10000_rep3] ERROR TabPFNLicenseError: TabPFN requires a one-time license acceptance to download
+model weights for local inference, but browser login is
+disabled (TABPFN_NO_BROWSER is set).
+
+Set the TABPFN_TOKEN environment variable with a valid API key
+obtained from https://ux.priorlabs.ai
+2026-11-20 21:01:23 [completo_rep3] ERROR TabPFNLicenseError: TabPFN requires a one-time license acceptance to download
+model weights for local inference, but browser login is
+disabled (TABPFN_NO_BROWSER is set).
+
+Set the TABPFN_TOKEN environment variable with a valid API key
+obtained from https://ux.priorlabs.ai
+2026-11-20 21:01:24 [10000_rep4] ERROR TabPFNLicenseError: TabPFN requires a one-time license acceptance to download
+model weights for local inference, but browser login is
+disabled (TABPFN_NO_BROWSER is set).
+
+Set the TABPFN_TOKEN environment variable with a valid API key
+obtained from https://ux.priorlabs.ai
+2026-11-20 21:01:25 [completo_rep4] ERROR TabPFNLicenseError: TabPFN requires a one-time license acceptance to download
+model weights for local inference, but browser login is
+disabled (TABPFN_NO_BROWSER is set).
+
+Set the TABPFN_TOKEN environment variable with a valid API key
+obtained from https://ux.priorlabs.ai
+2026-11-20 21:01:26 [10000_rep5] ERROR TabPFNLicenseError: TabPFN requires a one-time license acceptance to download
+model weights for local inference, but browser login is
+disabled (TABPFN_NO_BROWSER is set).
+
+Set the TABPFN_TOKEN environment variable with a valid API key
+obtained from https://ux.priorlabs.ai
+2026-11-20 21:01:27 [completo_rep5] ERROR TabPFNLicenseError: TabPFN requires a one-time license acceptance to download
+model weights for local inference, but browser login is
+disabled (TABPFN_NO_BROWSER is set).
+
+Set the TABPFN_TOKEN environment variable with a valid API key
+obtained from https://ux.priorlabs.ai
+2026-11-20 21:01:28 [10000_rep6] ERROR TabPFNLicenseError: TabPFN requires a one-time license acceptance to download
+model weights for local inference, but browser login is
+disabled (TABPFN_NO_BROWSER is set).
+
+Set the TABPFN_TOKEN environment variable with a valid API key
+obtained from https://ux.priorlabs.ai
+2026-11-20 21:01:29 [completo_rep6] ERROR TabPFNLicenseError: TabPFN requires a one-time license acceptance to download
+model weights for local inference, but browser login is
+disabled (TABPFN_NO_BROWSER is set).
+
+Set the TABPFN_TOKEN environment variable with a valid API key
+obtained from https://ux.priorlabs.ai
+2026-11-20 21:01:30 [10000_rep7] ERROR TabPFNLicenseError: TabPFN requires a one-time license acceptance to download
+model weights for local inference, but browser login is
+disabled (TABPFN_NO_BROWSER is set).
+
+Set the TABPFN_TOKEN environment variable with a valid API key
+obtained from https://ux.priorlabs.ai
+2026-11-20 21:01:31 [completo_rep7] ERROR TabPFNLicenseError: TabPFN requires a one-time license acceptance to download
+model weights for local inference, but browser login is
+disabled (TABPFN_NO_BROWSER is set).
+
+Set the TABPFN_TOKEN environment variable with a valid API key
+obtained from https://ux.priorlabs.ai
+2026-11-20 21:01:32 [10000_rep8] ERROR TabPFNLicenseError: TabPFN requires a one-time license acceptance to download
+model weights for local inference, but browser login is
+disabled (TABPFN_NO_BROWSER is set).
+
+Set the TABPFN_TOKEN environment variable with a valid API key
+obtained from https://ux.priorlabs.ai
+2026-11-20 21:01:33 [completo_rep8] ERROR TabPFNLicenseError: TabPFN requires a one-time license acceptance to download
+model weights for local inference, but browser login is
+disabled (TABPFN_NO_BROWSER is set).
+
+Set the TABPFN_TOKEN environment variable with a valid API key
+obtained from https://ux.priorlabs.ai
+2026-11-20 21:01:34 [10000_rep9] ERROR TabPFNLicenseError: TabPFN requires a one-time license acceptance to download
+model weights for local inference, but browser login is
+disabled (TABPFN_NO_BROWSER is set).
+
+Set the TABPFN_TOKEN environment variable with a valid API key
+obtained from https://ux.priorlabs.ai
+2026-11-20 21:01:36 [completo_rep9] ERROR TabPFNLicenseError: TabPFN requires a one-time license acceptance to download
+model weights for local inference, but browser login is
+disabled (TABPFN_NO_BROWSER is set).
+
+Set the TABPFN_TOKEN environment variable with a valid API key
+obtained from https://ux.priorlabs.ai
+2026-11-20 21:01:36 Terminado.
+2026-11-21 02:49:10 Datos: (1000000, 32); validación 20,000 (182 fraudes); prueba 50,000 (549 fraudes)
+2026-11-21 02:49:10 [1/20] 10000_rep0: datos y preprocesamiento idénticos (a76859d483acd40e)
+2026-11-21 02:49:11 [2/20] completo_rep0: datos y preprocesamiento idénticos (69a905145e448f14)
+2026-11-21 02:49:11 [3/20] 10000_rep1: datos y preprocesamiento idénticos (40362c3b716938f2)
+2026-11-21 02:49:12 [4/20] completo_rep1: datos y preprocesamiento idénticos (d6011e849da1ac33)
+2026-11-21 02:49:12 [5/20] 10000_rep2: datos y preprocesamiento idénticos (1224159e624f653b)
+2026-11-21 02:49:12 [6/20] completo_rep2: datos y preprocesamiento idénticos (51af5f228dcbe84f)
+2026-11-21 02:49:13 [7/20] 10000_rep3: datos y preprocesamiento idénticos (55a9db3b40f0fc1b)
+2026-11-21 02:49:13 [8/20] completo_rep3: datos y preprocesamiento idénticos (4a22c5d2c9dee267)
+2026-11-21 02:49:13 [9/20] 10000_rep4: datos y preprocesamiento idénticos (bf21c675ede5370b)
+2026-11-21 02:49:14 [10/20] completo_rep4: datos y preprocesamiento idénticos (9485aa14e32f49d2)
+2026-11-21 02:49:14 [11/20] 10000_rep5: datos y preprocesamiento idénticos (f5765e6f4aec9ac6)
+2026-11-21 02:49:14 [12/20] completo_rep5: datos y preprocesamiento idénticos (d0b64fe781adbbe9)
+2026-11-21 02:49:15 [13/20] 10000_rep6: datos y preprocesamiento idénticos (3f6d6ad6ced148b6)
+2026-11-21 02:49:15 [14/20] completo_rep6: datos y preprocesamiento idénticos (04233880d8f01082)
+2026-11-21 02:49:15 [15/20] 10000_rep7: datos y preprocesamiento idénticos (1c5e541d63a7307e)
+2026-11-21 02:49:16 [16/20] completo_rep7: datos y preprocesamiento idénticos (0ff4bf86981ce9ab)
+2026-11-21 02:49:16 [17/20] 10000_rep8: datos y preprocesamiento idénticos (f0d84b5f52fb5187)
+2026-11-21 02:49:17 [18/20] completo_rep8: datos y preprocesamiento idénticos (379e76f8eb903db1)
+2026-11-21 02:49:17 [19/20] 10000_rep9: datos y preprocesamiento idénticos (9362f1262036ec21)
+2026-11-21 02:49:17 [20/20] completo_rep9: datos y preprocesamiento idénticos (8585d05f619b5b7e)
+2026-11-21 02:49:17 Terminado.
+2026-11-21 02:49:20 Datos: (1000000, 32); validación 20,000 (182 fraudes); prueba 50,000 (549 fraudes)
+2026-11-21 02:49:23 Entorno: {'python': '3.13.16 (main, Oct  1 2026, 15:40:24) [GCC 13.3.0]', 'plataforma': 'Linux-6.6.159+-x86_64-with-glibc2.39', 'tabpfn': '9.1.0', 'torch': '2.14.1+cu130', 'sklearn': '1.6.1', 'numpy': '2.4.6', 'pandas': '2.2.3', 'gpu': 'NVIDIA A100-SXM4-80GB', 'memoria_gpu_gb': 85.1, 'version_modelo': 'v3.5', 'lote': 5000}
+2026-11-21 02:50:20 [1/20] 10000_rep0: PR-AUC 0.1197, ROC-AUC 0.8545, recall@5%FPR 0.4572 | ajuste 0.8 s, predicción 39.6 s, GPU 8.3 GB | 1 min transcurridos
+2026-11-21 02:59:52 [2/20] completo_rep0: PR-AUC 0.1210, ROC-AUC 0.8621, recall@5%FPR 0.4645 | ajuste 2.3 s, predicción 406.3 s, GPU 8.4 GB | 10 min transcurridos
+2026-11-21 03:00:49 [3/20] 10000_rep1: PR-AUC 0.1050, ROC-AUC 0.8471, recall@5%FPR 0.4317 | ajuste 0.7 s, predicción 39.6 s, GPU 8.3 GB | 11 min transcurridos
+2026-11-21 03:10:21 [4/20] completo_rep1: PR-AUC 0.1169, ROC-AUC 0.8598, recall@5%FPR 0.4517 | ajuste 2.2 s, predicción 406.5 s, GPU 8.4 GB | 21 min transcurridos
+2026-11-21 03:11:17 [5/20] 10000_rep2: PR-AUC 0.1161, ROC-AUC 0.8540, recall@5%FPR 0.4426 | ajuste 0.7 s, predicción 39.6 s, GPU 8.3 GB | 22 min transcurridos
+2026-11-21 03:20:49 [6/20] completo_rep2: PR-AUC 0.1209, ROC-AUC 0.8622, recall@5%FPR 0.4590 | ajuste 2.2 s, predicción 406.3 s, GPU 8.4 GB | 31 min transcurridos
+2026-11-21 03:21:45 [7/20] 10000_rep3: PR-AUC 0.1099, ROC-AUC 0.8480, recall@5%FPR 0.4426 | ajuste 0.7 s, predicción 39.5 s, GPU 8.3 GB | 32 min transcurridos
+2026-11-21 03:31:18 [8/20] completo_rep3: PR-AUC 0.1203, ROC-AUC 0.8604, recall@5%FPR 0.4718 | ajuste 2.2 s, predicción 406.7 s, GPU 8.4 GB | 42 min transcurridos
+2026-11-21 03:32:14 [9/20] 10000_rep4: PR-AUC 0.1192, ROC-AUC 0.8544, recall@5%FPR 0.4572 | ajuste 0.7 s, predicción 39.7 s, GPU 8.3 GB | 43 min transcurridos
+2026-11-21 03:41:46 [10/20] completo_rep4: PR-AUC 0.1208, ROC-AUC 0.8621, recall@5%FPR 0.4663 | ajuste 2.2 s, predicción 406.6 s, GPU 8.4 GB | 52 min transcurridos
+2026-11-21 03:42:43 [11/20] 10000_rep5: PR-AUC 0.1037, ROC-AUC 0.8507, recall@5%FPR 0.4353 | ajuste 0.7 s, predicción 40.0 s, GPU 8.3 GB | 53 min transcurridos
+2026-11-21 03:52:15 [12/20] completo_rep5: PR-AUC 0.1172, ROC-AUC 0.8616, recall@5%FPR 0.4663 | ajuste 2.2 s, predicción 406.6 s, GPU 8.4 GB | 63 min transcurridos
+2026-11-21 03:53:12 [13/20] 10000_rep6: PR-AUC 0.1082, ROC-AUC 0.8494, recall@5%FPR 0.4353 | ajuste 0.7 s, predicción 39.9 s, GPU 8.3 GB | 64 min transcurridos
+2026-11-21 04:02:45 [14/20] completo_rep6: PR-AUC 0.1179, ROC-AUC 0.8616, recall@5%FPR 0.4481 | ajuste 2.3 s, predicción 406.8 s, GPU 8.4 GB | 73 min transcurridos
+2026-11-21 04:03:42 [15/20] 10000_rep7: PR-AUC 0.1115, ROC-AUC 0.8552, recall@5%FPR 0.4317 | ajuste 0.7 s, predicción 40.2 s, GPU 8.3 GB | 74 min transcurridos
+2026-11-21 04:13:15 [16/20] completo_rep7: PR-AUC 0.1171, ROC-AUC 0.8617, recall@5%FPR 0.4608 | ajuste 2.5 s, predicción 406.9 s, GPU 8.4 GB | 84 min transcurridos
+2026-11-21 04:14:12 [17/20] 10000_rep8: PR-AUC 0.1100, ROC-AUC 0.8506, recall@5%FPR 0.4372 | ajuste 0.7 s, predicción 39.6 s, GPU 8.3 GB | 85 min transcurridos
+2026-11-21 04:23:45 [18/20] completo_rep8: PR-AUC 0.1172, ROC-AUC 0.8616, recall@5%FPR 0.4699 | ajuste 2.2 s, predicción 407.2 s, GPU 8.4 GB | 94 min transcurridos
+2026-11-21 04:24:40 [19/20] 10000_rep9: PR-AUC 0.1125, ROC-AUC 0.8530, recall@5%FPR 0.4299 | ajuste 0.7 s, predicción 39.0 s, GPU 8.3 GB | 95 min transcurridos
+2026-11-21 04:34:13 [20/20] completo_rep9: PR-AUC 0.1182, ROC-AUC 0.8607, recall@5%FPR 0.4645 | ajuste 2.2 s, predicción 406.9 s, GPU 8.4 GB | 105 min transcurridos
+2026-11-21 04:34:13 Terminado.

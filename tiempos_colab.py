@@ -11,6 +11,9 @@ Grupos (cada uno necesita su versión de tabpfn, ver el cuaderno):
   v35        TabPFN-3.5, repetición 0, como control de tiempos en otra sesión (tabpfn 9.1.0)
   importancia    importancia por permutación (10,000 filas, rep. 0): clásicos + TabPFN v2 (tabpfn 2.1.3)
   importancia35  importancia por permutación de TabPFN-3.5                     (tabpfn 9.1.0)
+  variantes  variantes de BAF (--carpeta variantes/v1 ... v5): TabPFN v2 (10,000 filas),
+             XGBoost por defecto y ajustado, Random Forest y Logistic L1 por defecto,
+             con 10,000 filas y el conjunto completo                  (tabpfn 2.1.3)
 
 Cada resultado se compara con el publicado (resultados_publicados.csv, si existe) para
 confirmar que el desempeño se reproduce. Los resultados se
@@ -22,6 +25,7 @@ Uso (en Colab):
   !python tiempos_colab.py --grupo principal
   !python tiempos_colab.py --grupo v35
   !python tiempos_colab.py --grupo importancia35
+  !python tiempos_colab.py --grupo variantes --carpeta variantes/v1
 """
 import argparse
 import hashlib
@@ -44,6 +48,9 @@ os.environ.setdefault("TABPFN_NO_BROWSER", "1")
 import experimento_fraude as ef  # noqa: E402
 
 TAMANOS = ["1000", "2500", "5000", "10000", "completo"]
+# Variantes de BAF: modelos clásicos (y variante) evaluados junto con los dos TabPFN
+CLASICOS_VARIANTES = [("XGBoost", "defecto"), ("XGBoost", "ajustado"),
+                      ("Random Forest", "defecto"), ("Logistic L1", "defecto")]
 
 
 class Args:
@@ -77,7 +84,8 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--carpeta", default="/content/drive/MyDrive/paquete_colab")
-    ap.add_argument("--grupo", choices=["principal", "v35", "importancia", "importancia35"], required=True)
+    ap.add_argument("--grupo", choices=["principal", "v35", "importancia", "importancia35",
+                                        "variantes"], required=True)
     ap.add_argument("--reps", type=int, default=None)
     ap.add_argument("--prueba-rapida", action="store_true")
     args = ap.parse_args()
@@ -101,7 +109,7 @@ def main():
     if not torch.cuda.is_available():
         sys.exit("No hay GPU. En Colab: Entorno de ejecución > Cambiar tipo de entorno > GPU.")
     v_tabpfn = pkg_version("tabpfn")
-    esperada = "2." if args.grupo in ("principal", "importancia") else "9."
+    esperada = "2." if args.grupo in ("principal", "importancia", "variantes") else "9."
     if not v_tabpfn.startswith(esperada):
         sys.exit(f"El grupo '{args.grupo}' necesita tabpfn {esperada}x y está instalada la "
                  f"{v_tabpfn}. Ejecuta la celda de instalación correspondiente.")
@@ -176,6 +184,18 @@ def main():
                     plan.append((tam, "defecto", rep, "TabPFN"))
                 for var in ["defecto", "ajustado"]:
                     plan += [(tam, var, rep, m) for m in ef.CLASICOS]
+    elif args.grupo == "variantes":
+        reps = args.reps or 10
+        # Solo los tamaños exportados (la ablación v5sx trae únicamente 10,000 filas)
+        tamanos = [t for t in ["10000", "completo"] if f"{t}_rep0" in ref["entrenamiento"]]
+        if args.prueba_rapida:
+            reps, tamanos = 1, ["10000"]
+        plan = []
+        for rep in range(reps):
+            for tam in tamanos:
+                if tam != "completo":
+                    plan.append((tam, "defecto", rep, "TabPFN"))
+                plan += [(tam, var, rep, m) for m, var in CLASICOS_VARIANTES]
     else:
         reps = args.reps or 1
         plan = [(tam, "defecto", rep, "TabPFN-3.5") for rep in range(reps) for tam in TAMANOS]

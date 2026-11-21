@@ -1,0 +1,31 @@
+% === Generado por analizar_robustez.py: no editar a mano ===
+\begin{table}[htbp]
+\centering
+\caption{Robustness across the BAF suite: test PR-AUC (mean $\pm$ 95\% CI over 10 repetitions; 50{,}000 test applications from months 6--7) with 10{,}000 training rows (a) and with the full undersampled training set (b) (67{,}400 rows in Base and Variants I--II; 70{,}360 in Variants III--V). Frauds: frauds among the test applications. Best other: best default classical model (XGBoost, random forest, or $L_1$ logistic regression). Wins (Holm $p$): repetitions in which the TabPFN version obtained a higher PR-AUC than tuned XGBoost, and the Holm-adjusted $p$-value of the two-sided Wilcoxon signed-rank test; the correction covers the comparisons among the six methods of this analysis, so the adjusted $p$-values for Base differ from those of Table~\ref{tab:learning}. TabPFN~v2 does not support the full training set. Variant V without $x_1$ and $x_2$: ablation run with 10{,}000 training rows only (Section~\ref{sec:ablation}).}
+\label{tab:robustness}
+\footnotesize
+\begin{tabular}{l r c c c l c c}
+\toprule
+ & & & & & & \multicolumn{2}{c}{vs.\ tuned XGBoost: wins (Holm $p$)} \\
+\cmidrule(lr){7-8}
+Dataset & Frauds & TabPFN-3.5 & TabPFN~v2 & Tuned XGB & Best other & TabPFN-3.5 & TabPFN~v2 \\
+\midrule
+\multicolumn{8}{l}{\emph{(a) 10{,}000 training rows}} \\
+Base & 702 & $0.173 \pm 0.001$ & $0.162 \pm 0.002$ & $0.155 \pm 0.005$ & LR-$L_1$ $0.144$ & 10/10 (0.010) & 9/10 (0.027) \\
+Variant I & 702 & $0.176 \pm 0.005$ & $0.162 \pm 0.002$ & $0.163 \pm 0.003$ & RF $0.146$ & 9/10 (0.010) & 5/10 (0.695) \\
+Variant II & 702 & $0.201 \pm 0.004$ & $0.194 \pm 0.003$ & $0.185 \pm 0.006$ & LR-$L_1$ $0.171$ & 10/10 (0.010) & 9/10 (0.010) \\
+Variant III & 549 & $0.549 \pm 0.002$ & $0.534 \pm 0.003$ & $0.510 \pm 0.004$ & XGB $0.492$ & 10/10 (0.010) & 10/10 (0.010) \\
+Variant IV & 549 & $0.112 \pm 0.004$ & $0.099 \pm 0.003$ & $0.103 \pm 0.004$ & LR-$L_1$ $0.089$ & 9/10 (0.010) & 1/10 (0.020) \\
+Variant V & 549 & $0.068 \pm 0.004$ & $0.058 \pm 0.003$ & $0.065 \pm 0.004$ & LR-$L_1$ $0.070$ & 7/10 (0.211) & 1/10 (0.010) \\
+Variant V without $x_1$, $x_2$ & 549 & $0.145 \pm 0.004$ & $0.131 \pm 0.004$ & $0.129 \pm 0.007$ & RF $0.109$ & 10/10 (0.010) & 6/10 (0.557) \\
+\midrule
+\multicolumn{8}{l}{\emph{(b) Full undersampled training set}} \\
+Base & 702 & $0.180 \pm 0.001$ & --- & $0.168 \pm 0.003$ & RF $0.158$ & 10/10 (0.008) & --- \\
+Variant I & 702 & $0.184 \pm 0.001$ & --- & $0.175 \pm 0.003$ & XGB $0.160$ & 10/10 (0.008) & --- \\
+Variant II & 702 & $0.210 \pm 0.001$ & --- & $0.200 \pm 0.003$ & RF $0.185$ & 10/10 (0.008) & --- \\
+Variant III & 549 & $0.562 \pm 0.001$ & --- & $0.543 \pm 0.004$ & XGB $0.535$ & 10/10 (0.008) & --- \\
+Variant IV & 549 & $0.119 \pm 0.001$ & --- & $0.108 \pm 0.003$ & XGB $0.105$ & 10/10 (0.008) & --- \\
+Variant V & 549 & $0.071 \pm 0.001$ & --- & $0.071 \pm 0.004$ & RF $0.073$ & 5/10 (1.000) & --- \\
+\bottomrule
+\end{tabular}
+\end{table}

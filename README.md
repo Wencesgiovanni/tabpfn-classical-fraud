@@ -10,7 +10,9 @@ The study compares two generations of TabPFN (v2 and 3.5) with seven classical c
 (linear SVM, L1 logistic regression, ridge, random forest, XGBoost, scikit-learn MLP and a
 Keras network), each with default and tuned hyperparameters, on the Base variant of the Bank
 Account Fraud (BAF) dataset. Models are trained on 1,000 to 67,400 rows under a temporal split
-(months 0–4 train, 5 validation, 6–7 test), with ten repetitions per training size.
+(months 0–4 train, 5 validation, 6–7 test), with ten repetitions per training size. A
+robustness analysis repeats the comparison on the five biased variants of BAF (Variants I–V),
+with an ablation of Variant V without the attributes `x1` and `x2`.
 
 The source code is commented in Spanish; this README and all outputs used in the article are
 in English.
@@ -25,10 +27,13 @@ in English.
 | `tabpfn35_colab.py` | Runs TabPFN-3.5 on Colab with the same partitions. |
 | `preparar_resultados_finales.py` | Merges the Colab outputs and writes the summary, statistical tests and Figures 2–6 to `resultados_finales/`. |
 | `figura_correlacion.py` | Figure 1 (correlation matrix of the BAF variables). |
-| `generar_tablas_latex.py` | Tables 3–9 of the article in LaTeX (`resultados_finales/tablas.tex`). |
+| `generar_tablas_latex.py` | Tables 4–7 and A1–A3 of the article in LaTeX (`resultados_finales/tablas.tex`). |
+| `analizar_robustez.py` | Robustness analysis on Base and Variants I–V and the ablation: statistical tests, Figure 7 and Tables 8–9 (`resultados_finales/robustez/`). |
+| `diagnostico_x1_x2.py` | Univariate ROC-AUC per period and Kolmogorov–Smirnov statistic of `x1` and `x2` in Variants III and V. |
 | `colab/ejecutar_en_colab.ipynb` | Notebook that runs the experiments on a Colab A100. |
+| `colab/variantes_en_colab.ipynb` | Notebook that runs the variants and the ablation on a Colab A100. |
 | `particiones/` | Reference partitions (`particiones.npz`) and SHA-256 fingerprints of every preprocessed test matrix (`huellas.json`) used in the article. |
-| `resultados_colab/` | Raw outputs of the Colab runs used in the article (one row per model, training size and repetition) and the software environments. |
+| `resultados_colab/` | Raw outputs of the Colab runs used in the article (one row per model, training size and repetition) and the software environments; `resultados_colab/variantes/v1`–`v5` and `v5sx` hold those of the variants and of the ablation, with their partitions and fingerprints. |
 | `resultados_finales/` | Everything reported in the article: summaries, statistical tests, figures and tables. |
 | `requirements-clasicos-v2.txt`, `requirements-tabpfn35.txt` | The two software environments (see below). |
 
@@ -42,7 +47,8 @@ Internal model names are in Spanish: `SVM lineal` (linear SVM), `Logistic L1`, `
 The BAF dataset is not redistributed here. Download `Base.csv` from the dataset authors
 ([Kaggle](https://www.kaggle.com/datasets/sgpjesus/bank-account-fraud-dataset-neurips-2022);
 see also [github.com/feedzai/bank-account-fraud](https://github.com/feedzai/bank-account-fraud))
-and place it at `data/Base.csv`. Its use is subject to the license stated by its authors.
+and place it at `data/Base.csv`; for the robustness analysis, also place `Variant I.csv` …
+`Variant V.csv` in `data/`. Its use is subject to the license stated by its authors.
 
 The partitions are defined by row position and random seeds. The copy of the dataset used in
 the study contained the same rows as `Base.csv` but in a different order, so
@@ -65,7 +71,7 @@ from `Base.csv`; those of the copy used in the study are kept in
 ## Software environments
 
 TabPFN v2 and TabPFN-3.5 require incompatible versions of the `tabpfn` package, so the
-experiments used two software environments on the same type of machine (Section 4.8 of the
+experiments used two software environments on the same type of machine (Section 4.9 of the
 article):
 
 * **Classical models and TabPFN v2** — Python 3.9, `requirements-clasicos-v2.txt`
@@ -78,10 +84,11 @@ All models were fitted, scored and timed on Google Colab virtual machines of the
 with an NVIDIA A100-SXM4 GPU (80 GB) and a 12-core Intel Xeon CPU at 2.20 GHz: the TabPFN models
 on the GPU and the classical models on the CPU. The exact package versions of each run are in
 `resultados_colab/entorno_*.json`, and every per-repetition result, including all times, is in
-`resultados_colab/`.
+`resultados_colab/`. The ablation ran on the same type of machine with the 40 GB version of the
+A100.
 
-The remaining scripts (`preparar_resultados_finales.py`, `figura_correlacion.py` and
-`generar_tablas_latex.py`) fit no model and measure no time: they only aggregate these results
+The remaining scripts (`preparar_resultados_finales.py`, `figura_correlacion.py`,
+`generar_tablas_latex.py`, `analizar_robustez.py` and `diagnostico_x1_x2.py`) fit no model and measure no time: they only aggregate these results
 into summaries, statistical tests, figures and tables, and they give identical outputs on any
 computer with the first environment (no GPU needed).
 
@@ -94,7 +101,9 @@ From the repository root, with the first environment:
 ```bash
 python preparar_resultados_finales.py   # summary, statistical tests, Figures 2-6
 python figura_correlacion.py            # Figure 1 (needs data/Base.csv)
-python generar_tablas_latex.py          # Tables 3-9 -> resultados_finales/tablas.tex
+python generar_tablas_latex.py          # Tables 4-7, A1-A3 -> resultados_finales/tablas.tex
+python analizar_robustez.py             # robustness: Figure 7, Tables 8-9 -> resultados_finales/robustez/
+python diagnostico_x1_x2.py             # x1, x2 diagnostic (needs data/Variant III.csv, data/Variant V.csv)
 ```
 
 The first command reads `resultados_colab/` and regenerates every file in
@@ -119,6 +128,18 @@ runs, so its PR-AUC can differ slightly from the published values; in our checks
 differences were at most 0.001, below its standard deviation across repetitions
 (0.002–0.010). Wall-clock times depend on the hardware and on the load of the virtual machine.
 
+### Rerun of the robustness analysis (A100 GPU)
+
+1. For each variant, `python exportar_para_colab.py --conjunto v1` (… `v5`) reads
+   `data/Variant I.csv` (… `Variant V.csv`) and creates `paquete_colab/variantes/v1` (… `v5`);
+   `--conjunto v5sx` creates the ablation (Variant V without `x1` and `x2`, 10,000 rows only).
+   Each variant is used in the row order of its file.
+2. Copy `paquete_colab/variantes/` to `My Drive/paquete_colab/variantes`, open
+   `colab/variantes_en_colab.ipynb` with an A100 runtime and run its cells in order (Part A:
+   TabPFN v2 and classical models; Part B: TabPFN-3.5; section 8: the ablation).
+3. Copy the outputs to `resultados_colab/variantes/` (without `datos_baf.npz` and `puntajes/`)
+   and run `python analizar_robustez.py`.
+
 ## Correspondence between the article and the outputs
 
 | Article | File in `resultados_finales/` |
@@ -128,7 +149,10 @@ differences were at most 0.001, below its standard deviation across repetitions
 | Figure 3 | `fig_curva_aprendizaje.png` |
 | Figures 4 and 5 | `fig_costo_10000.png`, `fig_costo_completo.png` |
 | Figure 6 | `fig_importancia.png` (`importancia.csv`, `importancia_resumen.csv`, `importancia_concordancia_spearman.csv`) |
-| Tables 3–9 | `tablas.tex` |
+| Tables 4–7 and A1–A3 | `tablas.tex` |
+| Figure 7, Tables 8–9 (Sections 5.8–5.9) | `robustez/fig_robustez.png`, `robustez/tabla_robustez_paneles.tex`, `robustez/tabla_ablacion.tex` |
+| Robustness tests and summaries | `robustez/pruebas_robustez.txt`, `robustez/robustez_*.csv`, `robustez/ablacion_v5_sin_x.csv` |
+| Diagnostic of `x1` and `x2` (Section 5.9) | `robustez/diagnostico_x1_x2.csv` |
 | Section 5.3 (Friedman and paired Wilcoxon–Holm tests) | `pruebas_estadisticas.txt`, `wilcoxon_holm*_*.csv` |
 | Means, standard deviations and 95% CIs | `resumen.csv`, `resumen.md` |
 | Per-repetition results | `resultados_crudos.csv` |

@@ -1,0 +1,940 @@
+Fri Nov 20 21:01:54 2026 10000_rep0
+Traceback (most recent call last):
+  File "/content/drive/MyDrive/paquete_colab/tabpfn35_colab.py", line 220, in main
+    modelo.fit(Ptr, ytr)
+    ~~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/contextlib.py", line 85, in inner
+    return func(*args, **kwds)
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/classifier.py", line 976, in fit
+    byte_size = self._initialize_model_variables()
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/classifier.py", line 723, in _initialize_model_variables
+    return initialize_model_variables_helper(self, self.estimator_type)
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/base.py", line 523, in initialize_model_variables_helper
+    initialize_tabpfn_model(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        model_path=calling_instance.model_path,  # pyright: ignore[reportArgumentType]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        force_inference_dtype=forced_inference_dtype,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/base.py", line 205, in initialize_tabpfn_model
+    load_model_criterion_config(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        model_path=model_path,  # pyright: ignore[reportArgumentType]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+        force_inference_dtype=force_inference_dtype,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/model_loading.py", line 759, in load_model_criterion_config
+    raise res[0]
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/model_loading.py", line 569, in _download_model
+    ensure_license_accepted(hf_repo_id=_HF_REPOS[version])
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/browser_auth.py", line 611, in ensure_license_accepted
+    raise TabPFNLicenseError(
+    ...<5 lines>...
+    )
+tabpfn.errors.TabPFNLicenseError: TabPFN requires a one-time license acceptance to download
+model weights for local inference, but browser login is
+disabled (TABPFN_NO_BROWSER is set).
+
+Set the TABPFN_TOKEN environment variable with a valid API key
+obtained from https://ux.priorlabs.ai
+
+Fri Nov 20 21:01:55 2026 completo_rep0
+Traceback (most recent call last):
+  File "/content/drive/MyDrive/paquete_colab/tabpfn35_colab.py", line 220, in main
+    modelo.fit(Ptr, ytr)
+    ~~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/contextlib.py", line 85, in inner
+    return func(*args, **kwds)
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/classifier.py", line 976, in fit
+    byte_size = self._initialize_model_variables()
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/classifier.py", line 723, in _initialize_model_variables
+    return initialize_model_variables_helper(self, self.estimator_type)
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/base.py", line 523, in initialize_model_variables_helper
+    initialize_tabpfn_model(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        model_path=calling_instance.model_path,  # pyright: ignore[reportArgumentType]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        force_inference_dtype=forced_inference_dtype,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/base.py", line 205, in initialize_tabpfn_model
+    load_model_criterion_config(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        model_path=model_path,  # pyright: ignore[reportArgumentType]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+        force_inference_dtype=force_inference_dtype,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/model_loading.py", line 759, in load_model_criterion_config
+    raise res[0]
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/model_loading.py", line 569, in _download_model
+    ensure_license_accepted(hf_repo_id=_HF_REPOS[version])
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/browser_auth.py", line 611, in ensure_license_accepted
+    raise TabPFNLicenseError(
+    ...<5 lines>...
+    )
+tabpfn.errors.TabPFNLicenseError: TabPFN requires a one-time license acceptance to download
+model weights for local inference, but browser login is
+disabled (TABPFN_NO_BROWSER is set).
+
+Set the TABPFN_TOKEN environment variable with a valid API key
+obtained from https://ux.priorlabs.ai
+
+Fri Nov 20 21:01:56 2026 10000_rep1
+Traceback (most recent call last):
+  File "/content/drive/MyDrive/paquete_colab/tabpfn35_colab.py", line 220, in main
+    modelo.fit(Ptr, ytr)
+    ~~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/contextlib.py", line 85, in inner
+    return func(*args, **kwds)
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/classifier.py", line 976, in fit
+    byte_size = self._initialize_model_variables()
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/classifier.py", line 723, in _initialize_model_variables
+    return initialize_model_variables_helper(self, self.estimator_type)
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/base.py", line 523, in initialize_model_variables_helper
+    initialize_tabpfn_model(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        model_path=calling_instance.model_path,  # pyright: ignore[reportArgumentType]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        force_inference_dtype=forced_inference_dtype,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/base.py", line 205, in initialize_tabpfn_model
+    load_model_criterion_config(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        model_path=model_path,  # pyright: ignore[reportArgumentType]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+        force_inference_dtype=force_inference_dtype,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/model_loading.py", line 759, in load_model_criterion_config
+    raise res[0]
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/model_loading.py", line 569, in _download_model
+    ensure_license_accepted(hf_repo_id=_HF_REPOS[version])
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/browser_auth.py", line 611, in ensure_license_accepted
+    raise TabPFNLicenseError(
+    ...<5 lines>...
+    )
+tabpfn.errors.TabPFNLicenseError: TabPFN requires a one-time license acceptance to download
+model weights for local inference, but browser login is
+disabled (TABPFN_NO_BROWSER is set).
+
+Set the TABPFN_TOKEN environment variable with a valid API key
+obtained from https://ux.priorlabs.ai
+
+Fri Nov 20 21:01:57 2026 completo_rep1
+Traceback (most recent call last):
+  File "/content/drive/MyDrive/paquete_colab/tabpfn35_colab.py", line 220, in main
+    modelo.fit(Ptr, ytr)
+    ~~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/contextlib.py", line 85, in inner
+    return func(*args, **kwds)
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/classifier.py", line 976, in fit
+    byte_size = self._initialize_model_variables()
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/classifier.py", line 723, in _initialize_model_variables
+    return initialize_model_variables_helper(self, self.estimator_type)
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/base.py", line 523, in initialize_model_variables_helper
+    initialize_tabpfn_model(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        model_path=calling_instance.model_path,  # pyright: ignore[reportArgumentType]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        force_inference_dtype=forced_inference_dtype,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/base.py", line 205, in initialize_tabpfn_model
+    load_model_criterion_config(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        model_path=model_path,  # pyright: ignore[reportArgumentType]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+        force_inference_dtype=force_inference_dtype,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/model_loading.py", line 759, in load_model_criterion_config
+    raise res[0]
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/model_loading.py", line 569, in _download_model
+    ensure_license_accepted(hf_repo_id=_HF_REPOS[version])
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/browser_auth.py", line 611, in ensure_license_accepted
+    raise TabPFNLicenseError(
+    ...<5 lines>...
+    )
+tabpfn.errors.TabPFNLicenseError: TabPFN requires a one-time license acceptance to download
+model weights for local inference, but browser login is
+disabled (TABPFN_NO_BROWSER is set).
+
+Set the TABPFN_TOKEN environment variable with a valid API key
+obtained from https://ux.priorlabs.ai
+
+Fri Nov 20 21:01:58 2026 10000_rep2
+Traceback (most recent call last):
+  File "/content/drive/MyDrive/paquete_colab/tabpfn35_colab.py", line 220, in main
+    modelo.fit(Ptr, ytr)
+    ~~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/contextlib.py", line 85, in inner
+    return func(*args, **kwds)
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/classifier.py", line 976, in fit
+    byte_size = self._initialize_model_variables()
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/classifier.py", line 723, in _initialize_model_variables
+    return initialize_model_variables_helper(self, self.estimator_type)
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/base.py", line 523, in initialize_model_variables_helper
+    initialize_tabpfn_model(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        model_path=calling_instance.model_path,  # pyright: ignore[reportArgumentType]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        force_inference_dtype=forced_inference_dtype,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/base.py", line 205, in initialize_tabpfn_model
+    load_model_criterion_config(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        model_path=model_path,  # pyright: ignore[reportArgumentType]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+        force_inference_dtype=force_inference_dtype,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/model_loading.py", line 759, in load_model_criterion_config
+    raise res[0]
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/model_loading.py", line 569, in _download_model
+    ensure_license_accepted(hf_repo_id=_HF_REPOS[version])
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/browser_auth.py", line 611, in ensure_license_accepted
+    raise TabPFNLicenseError(
+    ...<5 lines>...
+    )
+tabpfn.errors.TabPFNLicenseError: TabPFN requires a one-time license acceptance to download
+model weights for local inference, but browser login is
+disabled (TABPFN_NO_BROWSER is set).
+
+Set the TABPFN_TOKEN environment variable with a valid API key
+obtained from https://ux.priorlabs.ai
+
+Fri Nov 20 21:02:00 2026 completo_rep2
+Traceback (most recent call last):
+  File "/content/drive/MyDrive/paquete_colab/tabpfn35_colab.py", line 220, in main
+    modelo.fit(Ptr, ytr)
+    ~~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/contextlib.py", line 85, in inner
+    return func(*args, **kwds)
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/classifier.py", line 976, in fit
+    byte_size = self._initialize_model_variables()
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/classifier.py", line 723, in _initialize_model_variables
+    return initialize_model_variables_helper(self, self.estimator_type)
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/base.py", line 523, in initialize_model_variables_helper
+    initialize_tabpfn_model(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        model_path=calling_instance.model_path,  # pyright: ignore[reportArgumentType]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        force_inference_dtype=forced_inference_dtype,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/base.py", line 205, in initialize_tabpfn_model
+    load_model_criterion_config(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        model_path=model_path,  # pyright: ignore[reportArgumentType]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+        force_inference_dtype=force_inference_dtype,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/model_loading.py", line 759, in load_model_criterion_config
+    raise res[0]
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/model_loading.py", line 569, in _download_model
+    ensure_license_accepted(hf_repo_id=_HF_REPOS[version])
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/browser_auth.py", line 611, in ensure_license_accepted
+    raise TabPFNLicenseError(
+    ...<5 lines>...
+    )
+tabpfn.errors.TabPFNLicenseError: TabPFN requires a one-time license acceptance to download
+model weights for local inference, but browser login is
+disabled (TABPFN_NO_BROWSER is set).
+
+Set the TABPFN_TOKEN environment variable with a valid API key
+obtained from https://ux.priorlabs.ai
+
+Fri Nov 20 21:02:00 2026 10000_rep3
+Traceback (most recent call last):
+  File "/content/drive/MyDrive/paquete_colab/tabpfn35_colab.py", line 220, in main
+    modelo.fit(Ptr, ytr)
+    ~~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/contextlib.py", line 85, in inner
+    return func(*args, **kwds)
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/classifier.py", line 976, in fit
+    byte_size = self._initialize_model_variables()
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/classifier.py", line 723, in _initialize_model_variables
+    return initialize_model_variables_helper(self, self.estimator_type)
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/base.py", line 523, in initialize_model_variables_helper
+    initialize_tabpfn_model(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        model_path=calling_instance.model_path,  # pyright: ignore[reportArgumentType]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        force_inference_dtype=forced_inference_dtype,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/base.py", line 205, in initialize_tabpfn_model
+    load_model_criterion_config(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        model_path=model_path,  # pyright: ignore[reportArgumentType]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+        force_inference_dtype=force_inference_dtype,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/model_loading.py", line 759, in load_model_criterion_config
+    raise res[0]
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/model_loading.py", line 569, in _download_model
+    ensure_license_accepted(hf_repo_id=_HF_REPOS[version])
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/browser_auth.py", line 611, in ensure_license_accepted
+    raise TabPFNLicenseError(
+    ...<5 lines>...
+    )
+tabpfn.errors.TabPFNLicenseError: TabPFN requires a one-time license acceptance to download
+model weights for local inference, but browser login is
+disabled (TABPFN_NO_BROWSER is set).
+
+Set the TABPFN_TOKEN environment variable with a valid API key
+obtained from https://ux.priorlabs.ai
+
+Fri Nov 20 21:02:02 2026 completo_rep3
+Traceback (most recent call last):
+  File "/content/drive/MyDrive/paquete_colab/tabpfn35_colab.py", line 220, in main
+    modelo.fit(Ptr, ytr)
+    ~~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/contextlib.py", line 85, in inner
+    return func(*args, **kwds)
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/classifier.py", line 976, in fit
+    byte_size = self._initialize_model_variables()
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/classifier.py", line 723, in _initialize_model_variables
+    return initialize_model_variables_helper(self, self.estimator_type)
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/base.py", line 523, in initialize_model_variables_helper
+    initialize_tabpfn_model(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        model_path=calling_instance.model_path,  # pyright: ignore[reportArgumentType]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        force_inference_dtype=forced_inference_dtype,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/base.py", line 205, in initialize_tabpfn_model
+    load_model_criterion_config(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        model_path=model_path,  # pyright: ignore[reportArgumentType]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+        force_inference_dtype=force_inference_dtype,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/model_loading.py", line 759, in load_model_criterion_config
+    raise res[0]
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/model_loading.py", line 569, in _download_model
+    ensure_license_accepted(hf_repo_id=_HF_REPOS[version])
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/browser_auth.py", line 611, in ensure_license_accepted
+    raise TabPFNLicenseError(
+    ...<5 lines>...
+    )
+tabpfn.errors.TabPFNLicenseError: TabPFN requires a one-time license acceptance to download
+model weights for local inference, but browser login is
+disabled (TABPFN_NO_BROWSER is set).
+
+Set the TABPFN_TOKEN environment variable with a valid API key
+obtained from https://ux.priorlabs.ai
+
+Fri Nov 20 21:02:03 2026 10000_rep4
+Traceback (most recent call last):
+  File "/content/drive/MyDrive/paquete_colab/tabpfn35_colab.py", line 220, in main
+    modelo.fit(Ptr, ytr)
+    ~~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/contextlib.py", line 85, in inner
+    return func(*args, **kwds)
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/classifier.py", line 976, in fit
+    byte_size = self._initialize_model_variables()
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/classifier.py", line 723, in _initialize_model_variables
+    return initialize_model_variables_helper(self, self.estimator_type)
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/base.py", line 523, in initialize_model_variables_helper
+    initialize_tabpfn_model(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        model_path=calling_instance.model_path,  # pyright: ignore[reportArgumentType]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        force_inference_dtype=forced_inference_dtype,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/base.py", line 205, in initialize_tabpfn_model
+    load_model_criterion_config(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        model_path=model_path,  # pyright: ignore[reportArgumentType]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+        force_inference_dtype=force_inference_dtype,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/model_loading.py", line 759, in load_model_criterion_config
+    raise res[0]
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/model_loading.py", line 569, in _download_model
+    ensure_license_accepted(hf_repo_id=_HF_REPOS[version])
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/browser_auth.py", line 611, in ensure_license_accepted
+    raise TabPFNLicenseError(
+    ...<5 lines>...
+    )
+tabpfn.errors.TabPFNLicenseError: TabPFN requires a one-time license acceptance to download
+model weights for local inference, but browser login is
+disabled (TABPFN_NO_BROWSER is set).
+
+Set the TABPFN_TOKEN environment variable with a valid API key
+obtained from https://ux.priorlabs.ai
+
+Fri Nov 20 21:02:04 2026 completo_rep4
+Traceback (most recent call last):
+  File "/content/drive/MyDrive/paquete_colab/tabpfn35_colab.py", line 220, in main
+    modelo.fit(Ptr, ytr)
+    ~~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/contextlib.py", line 85, in inner
+    return func(*args, **kwds)
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/classifier.py", line 976, in fit
+    byte_size = self._initialize_model_variables()
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/classifier.py", line 723, in _initialize_model_variables
+    return initialize_model_variables_helper(self, self.estimator_type)
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/base.py", line 523, in initialize_model_variables_helper
+    initialize_tabpfn_model(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        model_path=calling_instance.model_path,  # pyright: ignore[reportArgumentType]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        force_inference_dtype=forced_inference_dtype,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/base.py", line 205, in initialize_tabpfn_model
+    load_model_criterion_config(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        model_path=model_path,  # pyright: ignore[reportArgumentType]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+        force_inference_dtype=force_inference_dtype,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/model_loading.py", line 759, in load_model_criterion_config
+    raise res[0]
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/model_loading.py", line 569, in _download_model
+    ensure_license_accepted(hf_repo_id=_HF_REPOS[version])
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/browser_auth.py", line 611, in ensure_license_accepted
+    raise TabPFNLicenseError(
+    ...<5 lines>...
+    )
+tabpfn.errors.TabPFNLicenseError: TabPFN requires a one-time license acceptance to download
+model weights for local inference, but browser login is
+disabled (TABPFN_NO_BROWSER is set).
+
+Set the TABPFN_TOKEN environment variable with a valid API key
+obtained from https://ux.priorlabs.ai
+
+Fri Nov 20 21:02:05 2026 10000_rep5
+Traceback (most recent call last):
+  File "/content/drive/MyDrive/paquete_colab/tabpfn35_colab.py", line 220, in main
+    modelo.fit(Ptr, ytr)
+    ~~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/contextlib.py", line 85, in inner
+    return func(*args, **kwds)
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/classifier.py", line 976, in fit
+    byte_size = self._initialize_model_variables()
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/classifier.py", line 723, in _initialize_model_variables
+    return initialize_model_variables_helper(self, self.estimator_type)
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/base.py", line 523, in initialize_model_variables_helper
+    initialize_tabpfn_model(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        model_path=calling_instance.model_path,  # pyright: ignore[reportArgumentType]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        force_inference_dtype=forced_inference_dtype,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/base.py", line 205, in initialize_tabpfn_model
+    load_model_criterion_config(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        model_path=model_path,  # pyright: ignore[reportArgumentType]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+        force_inference_dtype=force_inference_dtype,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/model_loading.py", line 759, in load_model_criterion_config
+    raise res[0]
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/model_loading.py", line 569, in _download_model
+    ensure_license_accepted(hf_repo_id=_HF_REPOS[version])
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/browser_auth.py", line 611, in ensure_license_accepted
+    raise TabPFNLicenseError(
+    ...<5 lines>...
+    )
+tabpfn.errors.TabPFNLicenseError: TabPFN requires a one-time license acceptance to download
+model weights for local inference, but browser login is
+disabled (TABPFN_NO_BROWSER is set).
+
+Set the TABPFN_TOKEN environment variable with a valid API key
+obtained from https://ux.priorlabs.ai
+
+Fri Nov 20 21:02:06 2026 completo_rep5
+Traceback (most recent call last):
+  File "/content/drive/MyDrive/paquete_colab/tabpfn35_colab.py", line 220, in main
+    modelo.fit(Ptr, ytr)
+    ~~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/contextlib.py", line 85, in inner
+    return func(*args, **kwds)
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/classifier.py", line 976, in fit
+    byte_size = self._initialize_model_variables()
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/classifier.py", line 723, in _initialize_model_variables
+    return initialize_model_variables_helper(self, self.estimator_type)
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/base.py", line 523, in initialize_model_variables_helper
+    initialize_tabpfn_model(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        model_path=calling_instance.model_path,  # pyright: ignore[reportArgumentType]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        force_inference_dtype=forced_inference_dtype,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/base.py", line 205, in initialize_tabpfn_model
+    load_model_criterion_config(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        model_path=model_path,  # pyright: ignore[reportArgumentType]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+        force_inference_dtype=force_inference_dtype,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/model_loading.py", line 759, in load_model_criterion_config
+    raise res[0]
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/model_loading.py", line 569, in _download_model
+    ensure_license_accepted(hf_repo_id=_HF_REPOS[version])
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/browser_auth.py", line 611, in ensure_license_accepted
+    raise TabPFNLicenseError(
+    ...<5 lines>...
+    )
+tabpfn.errors.TabPFNLicenseError: TabPFN requires a one-time license acceptance to download
+model weights for local inference, but browser login is
+disabled (TABPFN_NO_BROWSER is set).
+
+Set the TABPFN_TOKEN environment variable with a valid API key
+obtained from https://ux.priorlabs.ai
+
+Fri Nov 20 21:02:07 2026 10000_rep6
+Traceback (most recent call last):
+  File "/content/drive/MyDrive/paquete_colab/tabpfn35_colab.py", line 220, in main
+    modelo.fit(Ptr, ytr)
+    ~~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/contextlib.py", line 85, in inner
+    return func(*args, **kwds)
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/classifier.py", line 976, in fit
+    byte_size = self._initialize_model_variables()
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/classifier.py", line 723, in _initialize_model_variables
+    return initialize_model_variables_helper(self, self.estimator_type)
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/base.py", line 523, in initialize_model_variables_helper
+    initialize_tabpfn_model(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        model_path=calling_instance.model_path,  # pyright: ignore[reportArgumentType]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        force_inference_dtype=forced_inference_dtype,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/base.py", line 205, in initialize_tabpfn_model
+    load_model_criterion_config(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        model_path=model_path,  # pyright: ignore[reportArgumentType]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+        force_inference_dtype=force_inference_dtype,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/model_loading.py", line 759, in load_model_criterion_config
+    raise res[0]
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/model_loading.py", line 569, in _download_model
+    ensure_license_accepted(hf_repo_id=_HF_REPOS[version])
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/browser_auth.py", line 611, in ensure_license_accepted
+    raise TabPFNLicenseError(
+    ...<5 lines>...
+    )
+tabpfn.errors.TabPFNLicenseError: TabPFN requires a one-time license acceptance to download
+model weights for local inference, but browser login is
+disabled (TABPFN_NO_BROWSER is set).
+
+Set the TABPFN_TOKEN environment variable with a valid API key
+obtained from https://ux.priorlabs.ai
+
+Fri Nov 20 21:02:08 2026 completo_rep6
+Traceback (most recent call last):
+  File "/content/drive/MyDrive/paquete_colab/tabpfn35_colab.py", line 220, in main
+    modelo.fit(Ptr, ytr)
+    ~~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/contextlib.py", line 85, in inner
+    return func(*args, **kwds)
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/classifier.py", line 976, in fit
+    byte_size = self._initialize_model_variables()
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/classifier.py", line 723, in _initialize_model_variables
+    return initialize_model_variables_helper(self, self.estimator_type)
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/base.py", line 523, in initialize_model_variables_helper
+    initialize_tabpfn_model(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        model_path=calling_instance.model_path,  # pyright: ignore[reportArgumentType]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        force_inference_dtype=forced_inference_dtype,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/base.py", line 205, in initialize_tabpfn_model
+    load_model_criterion_config(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        model_path=model_path,  # pyright: ignore[reportArgumentType]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+        force_inference_dtype=force_inference_dtype,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/model_loading.py", line 759, in load_model_criterion_config
+    raise res[0]
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/model_loading.py", line 569, in _download_model
+    ensure_license_accepted(hf_repo_id=_HF_REPOS[version])
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/browser_auth.py", line 611, in ensure_license_accepted
+    raise TabPFNLicenseError(
+    ...<5 lines>...
+    )
+tabpfn.errors.TabPFNLicenseError: TabPFN requires a one-time license acceptance to download
+model weights for local inference, but browser login is
+disabled (TABPFN_NO_BROWSER is set).
+
+Set the TABPFN_TOKEN environment variable with a valid API key
+obtained from https://ux.priorlabs.ai
+
+Fri Nov 20 21:02:09 2026 10000_rep7
+Traceback (most recent call last):
+  File "/content/drive/MyDrive/paquete_colab/tabpfn35_colab.py", line 220, in main
+    modelo.fit(Ptr, ytr)
+    ~~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/contextlib.py", line 85, in inner
+    return func(*args, **kwds)
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/classifier.py", line 976, in fit
+    byte_size = self._initialize_model_variables()
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/classifier.py", line 723, in _initialize_model_variables
+    return initialize_model_variables_helper(self, self.estimator_type)
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/base.py", line 523, in initialize_model_variables_helper
+    initialize_tabpfn_model(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        model_path=calling_instance.model_path,  # pyright: ignore[reportArgumentType]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        force_inference_dtype=forced_inference_dtype,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/base.py", line 205, in initialize_tabpfn_model
+    load_model_criterion_config(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        model_path=model_path,  # pyright: ignore[reportArgumentType]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+        force_inference_dtype=force_inference_dtype,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/model_loading.py", line 759, in load_model_criterion_config
+    raise res[0]
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/model_loading.py", line 569, in _download_model
+    ensure_license_accepted(hf_repo_id=_HF_REPOS[version])
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/browser_auth.py", line 611, in ensure_license_accepted
+    raise TabPFNLicenseError(
+    ...<5 lines>...
+    )
+tabpfn.errors.TabPFNLicenseError: TabPFN requires a one-time license acceptance to download
+model weights for local inference, but browser login is
+disabled (TABPFN_NO_BROWSER is set).
+
+Set the TABPFN_TOKEN environment variable with a valid API key
+obtained from https://ux.priorlabs.ai
+
+Fri Nov 20 21:02:10 2026 completo_rep7
+Traceback (most recent call last):
+  File "/content/drive/MyDrive/paquete_colab/tabpfn35_colab.py", line 220, in main
+    modelo.fit(Ptr, ytr)
+    ~~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/contextlib.py", line 85, in inner
+    return func(*args, **kwds)
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/classifier.py", line 976, in fit
+    byte_size = self._initialize_model_variables()
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/classifier.py", line 723, in _initialize_model_variables
+    return initialize_model_variables_helper(self, self.estimator_type)
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/base.py", line 523, in initialize_model_variables_helper
+    initialize_tabpfn_model(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        model_path=calling_instance.model_path,  # pyright: ignore[reportArgumentType]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        force_inference_dtype=forced_inference_dtype,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/base.py", line 205, in initialize_tabpfn_model
+    load_model_criterion_config(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        model_path=model_path,  # pyright: ignore[reportArgumentType]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+        force_inference_dtype=force_inference_dtype,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/model_loading.py", line 759, in load_model_criterion_config
+    raise res[0]
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/model_loading.py", line 569, in _download_model
+    ensure_license_accepted(hf_repo_id=_HF_REPOS[version])
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/browser_auth.py", line 611, in ensure_license_accepted
+    raise TabPFNLicenseError(
+    ...<5 lines>...
+    )
+tabpfn.errors.TabPFNLicenseError: TabPFN requires a one-time license acceptance to download
+model weights for local inference, but browser login is
+disabled (TABPFN_NO_BROWSER is set).
+
+Set the TABPFN_TOKEN environment variable with a valid API key
+obtained from https://ux.priorlabs.ai
+
+Fri Nov 20 21:02:11 2026 10000_rep8
+Traceback (most recent call last):
+  File "/content/drive/MyDrive/paquete_colab/tabpfn35_colab.py", line 220, in main
+    modelo.fit(Ptr, ytr)
+    ~~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/contextlib.py", line 85, in inner
+    return func(*args, **kwds)
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/classifier.py", line 976, in fit
+    byte_size = self._initialize_model_variables()
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/classifier.py", line 723, in _initialize_model_variables
+    return initialize_model_variables_helper(self, self.estimator_type)
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/base.py", line 523, in initialize_model_variables_helper
+    initialize_tabpfn_model(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        model_path=calling_instance.model_path,  # pyright: ignore[reportArgumentType]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        force_inference_dtype=forced_inference_dtype,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/base.py", line 205, in initialize_tabpfn_model
+    load_model_criterion_config(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        model_path=model_path,  # pyright: ignore[reportArgumentType]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+        force_inference_dtype=force_inference_dtype,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/model_loading.py", line 759, in load_model_criterion_config
+    raise res[0]
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/model_loading.py", line 569, in _download_model
+    ensure_license_accepted(hf_repo_id=_HF_REPOS[version])
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/browser_auth.py", line 611, in ensure_license_accepted
+    raise TabPFNLicenseError(
+    ...<5 lines>...
+    )
+tabpfn.errors.TabPFNLicenseError: TabPFN requires a one-time license acceptance to download
+model weights for local inference, but browser login is
+disabled (TABPFN_NO_BROWSER is set).
+
+Set the TABPFN_TOKEN environment variable with a valid API key
+obtained from https://ux.priorlabs.ai
+
+Fri Nov 20 21:02:12 2026 completo_rep8
+Traceback (most recent call last):
+  File "/content/drive/MyDrive/paquete_colab/tabpfn35_colab.py", line 220, in main
+    modelo.fit(Ptr, ytr)
+    ~~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/contextlib.py", line 85, in inner
+    return func(*args, **kwds)
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/classifier.py", line 976, in fit
+    byte_size = self._initialize_model_variables()
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/classifier.py", line 723, in _initialize_model_variables
+    return initialize_model_variables_helper(self, self.estimator_type)
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/base.py", line 523, in initialize_model_variables_helper
+    initialize_tabpfn_model(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        model_path=calling_instance.model_path,  # pyright: ignore[reportArgumentType]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        force_inference_dtype=forced_inference_dtype,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/base.py", line 205, in initialize_tabpfn_model
+    load_model_criterion_config(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        model_path=model_path,  # pyright: ignore[reportArgumentType]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+        force_inference_dtype=force_inference_dtype,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/model_loading.py", line 759, in load_model_criterion_config
+    raise res[0]
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/model_loading.py", line 569, in _download_model
+    ensure_license_accepted(hf_repo_id=_HF_REPOS[version])
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/browser_auth.py", line 611, in ensure_license_accepted
+    raise TabPFNLicenseError(
+    ...<5 lines>...
+    )
+tabpfn.errors.TabPFNLicenseError: TabPFN requires a one-time license acceptance to download
+model weights for local inference, but browser login is
+disabled (TABPFN_NO_BROWSER is set).
+
+Set the TABPFN_TOKEN environment variable with a valid API key
+obtained from https://ux.priorlabs.ai
+
+Fri Nov 20 21:02:13 2026 10000_rep9
+Traceback (most recent call last):
+  File "/content/drive/MyDrive/paquete_colab/tabpfn35_colab.py", line 220, in main
+    modelo.fit(Ptr, ytr)
+    ~~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/contextlib.py", line 85, in inner
+    return func(*args, **kwds)
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/classifier.py", line 976, in fit
+    byte_size = self._initialize_model_variables()
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/classifier.py", line 723, in _initialize_model_variables
+    return initialize_model_variables_helper(self, self.estimator_type)
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/base.py", line 523, in initialize_model_variables_helper
+    initialize_tabpfn_model(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        model_path=calling_instance.model_path,  # pyright: ignore[reportArgumentType]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        force_inference_dtype=forced_inference_dtype,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/base.py", line 205, in initialize_tabpfn_model
+    load_model_criterion_config(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        model_path=model_path,  # pyright: ignore[reportArgumentType]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+        force_inference_dtype=force_inference_dtype,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/model_loading.py", line 759, in load_model_criterion_config
+    raise res[0]
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/model_loading.py", line 569, in _download_model
+    ensure_license_accepted(hf_repo_id=_HF_REPOS[version])
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/browser_auth.py", line 611, in ensure_license_accepted
+    raise TabPFNLicenseError(
+    ...<5 lines>...
+    )
+tabpfn.errors.TabPFNLicenseError: TabPFN requires a one-time license acceptance to download
+model weights for local inference, but browser login is
+disabled (TABPFN_NO_BROWSER is set).
+
+Set the TABPFN_TOKEN environment variable with a valid API key
+obtained from https://ux.priorlabs.ai
+
+Fri Nov 20 21:02:14 2026 completo_rep9
+Traceback (most recent call last):
+  File "/content/drive/MyDrive/paquete_colab/tabpfn35_colab.py", line 220, in main
+    modelo.fit(Ptr, ytr)
+    ~~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/contextlib.py", line 85, in inner
+    return func(*args, **kwds)
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/classifier.py", line 976, in fit
+    byte_size = self._initialize_model_variables()
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/classifier.py", line 723, in _initialize_model_variables
+    return initialize_model_variables_helper(self, self.estimator_type)
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/base.py", line 523, in initialize_model_variables_helper
+    initialize_tabpfn_model(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        model_path=calling_instance.model_path,  # pyright: ignore[reportArgumentType]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        force_inference_dtype=forced_inference_dtype,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/base.py", line 205, in initialize_tabpfn_model
+    load_model_criterion_config(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        model_path=model_path,  # pyright: ignore[reportArgumentType]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+        force_inference_dtype=force_inference_dtype,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/model_loading.py", line 759, in load_model_criterion_config
+    raise res[0]
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/model_loading.py", line 569, in _download_model
+    ensure_license_accepted(hf_repo_id=_HF_REPOS[version])
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/browser_auth.py", line 611, in ensure_license_accepted
+    raise TabPFNLicenseError(
+    ...<5 lines>...
+    )
+tabpfn.errors.TabPFNLicenseError: TabPFN requires a one-time license acceptance to download
+model weights for local inference, but browser login is
+disabled (TABPFN_NO_BROWSER is set).
+
+Set the TABPFN_TOKEN environment variable with a valid API key
+obtained from https://ux.priorlabs.ai
+
